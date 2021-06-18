@@ -4,11 +4,18 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
+
+public interface IMyInterface {
+}
+
 public class LocaleSelector : MonoBehaviour
 {
     public string localeCode = "en";
     public Locale locale;
     public bool selected = false;
+
+    [SerializeField]
+    public IMyInterface interfaceTest;
 
     IEnumerator Start()
     {
