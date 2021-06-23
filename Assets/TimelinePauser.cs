@@ -10,6 +10,7 @@ public class TimelinePauser : MonoBehaviour
     PlayableDirector playableDirector;
 
     public List<PlayableDirector> nextScenes;
+    [SerializeField]
     private int _transitionTo = 0;
 
     public int NextScene { get { return _transitionTo; } }
@@ -19,7 +20,10 @@ public class TimelinePauser : MonoBehaviour
     {
         playableDirector = GetComponent<PlayableDirector>();
         playableDirector.stopped += OnDirectorStop;
+    }
 
+    void OnDisable () {
+        playableDirector.stopped -= OnDirectorStop;
     }
 
     public void OnDirectorStop(PlayableDirector pb) {
@@ -27,6 +31,8 @@ public class TimelinePauser : MonoBehaviour
 
         playableDirector.stopped -= OnDirectorStop;
         nextScenes[NextScene].gameObject.SetActive(true);
+
+        gameObject.SetActive(false);
     }
 
 
