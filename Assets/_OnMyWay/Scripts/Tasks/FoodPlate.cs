@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Task_FoodPlate : MonoBehaviour
+[RequireComponent(typeof(MultiClickable))]
+public class FoodPlate : MonoBehaviour
 {
     public List<Sprite> spriteSequence;
     private int _currentState;
