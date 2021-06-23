@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: e2eb7106110fd7e40a2d51fc9bdff899
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6400411422581373868
+    second: Sprites_Scene03_J_0
+  - first:
+      213: -2575144154749147543
+    second: Sprites_Scene03_J_1
+  - first:
+      213: 266187846459451477
+    second: Sprites_Scene03_J_2
+  - first:
+      213: 5088829505875147373
+    second: Sprites_Scene03_J_3
+  - first:
+      213: 8363479126599237090
+    second: Sprites_Scene03_J_4
+  - first:
+      213: 4656280542169169813
+    second: Sprites_Scene03_J_5
+  - first:
+      213: 1844856757601112306
+    second: Sprites_Scene03_J_6
+  - first:
+      213: -3471396981216414359
+    second: Sprites_Scene03_J_7
+  - first:
+      213: -8975793408558904195
+    second: Sprites_Scene03_J_8
+  - first:
+      213: -8738303054548978456
+    second: Sprites_Scene03_J_9
+  - first:
+      213: 7497776250636604731
+    second: Sprites_Scene03_J_10
+  - first:
+      213: -6382147246982801542
+    second: Sprites_Scene03_J_11
+  - first:
+      213: 2680966202365067313
+    second: Sprites_Scene03_J_12
+  - first:
+      213: -6120878966028926011
+    second: Sprites_Scene03_J_13
+  - first:
+      213: 2236555311879474995
+    second: Sprites_Scene03_J_14
+  - first:
+      213: -4753774844347810819
+    second: Sprites_Scene03_J_15
+  - first:
+      213: -14558587899789165
+    second: Sprites_Scene03_J_16
+  - first:
+      213: 1628272027322656845
+    second: Sprites_Scene03_J_17
+  - first:
+      213: -8022390491099221008
+    second: Sprites_Scene03_J_18
+  - first:
+      213: 3420492357593503467
+    second: Sprites_Scene03_J_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1473
+        width: 103
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4544fa4d8bb2d27a0800000000000000
+      internalID: -6400411422581373868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1466
+        width: 238
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966e0c2f800434cd0800000000000000
+      internalID: -2575144154749147543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_2
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1421
+        width: 283
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558edbf9f60b1b300800000000000000
+      internalID: 266187846459451477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_3
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1541
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6af63c49772f9640800000000000000
+      internalID: 5088829505875147373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 865
+        width: 1045
+        height: 821
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed775b34fb011470800000000000000
+      internalID: 8363479126599237090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1053
+        width: 383
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f7e8aab7e6e9040800000000000000
+      internalID: 4656280542169169813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1297
+        width: 215
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f01b42527f3a9910800000000000000
+      internalID: 1844856757601112306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1196
+        width: 144
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9657b3c76de13dfc0800000000000000
+      internalID: -3471396981216414359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1072
+        width: 215
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ccd8163739f6380800000000000000
+      internalID: -8975793408558904195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1005
+        width: 99
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4b5ed5baf4bb680800000000000000
+      internalID: -8738303054548978456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 930
+        width: 209
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b351e8866c37d0860800000000000000
+      internalID: 7497776250636604731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 689
+        width: 406
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a775a5794ee0e67a0800000000000000
+      internalID: -6382147246982801542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_12
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 798
+        width: 104
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1304cc28e84b43520800000000000000
+      internalID: 2680966202365067313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_13
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 1189
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c38fac92054e0ba0800000000000000
+      internalID: -6120878966028926011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 265
+        width: 421
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fc615d437d90f10800000000000000
+      internalID: 2236555311879474995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 139
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbf57437f2370eb0800000000000000
+      internalID: -4753774844347810819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 466
+        width: 123
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3904dcb9a074ccff0800000000000000
+      internalID: -14558587899789165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 385
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48a54a28c8c89610800000000000000
+      internalID: 1628272027322656845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 246
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f33f805a5ebaa090800000000000000
+      internalID: -8022390491099221008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 144
+        width: 299
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be69c4b3da7087f20800000000000000
+      internalID: 3420492357593503467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1b9fa8f7bd1b23e44b3ec6fcd41cdacc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
