@@ -4,29 +4,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler
+public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerExitHandler, IPointerEnterHandler
 {
+    public int radius = 50;
+
+    [Tooltip("The task is considered completed once this percentage of wiped steam has been achieved")]
+    public float percentageForCompletion =  0.7f;
+    int numberOfTouchedPixels;
+
     SpriteRenderer spriteRenderer;
     Material material;
     Sprite runtimeSprite;
     Texture2D texture;
-
-    public int numberOfTouchedPixels;
-
     Color transparent = new Color(0, 0, 0, 0);
 
-    public int radius = 30;
+    bool _isHovering;
+
+    Boundary boundaries;
+    struct Boundary {
+        public Vector2 bottomLeft;
+        public Vector2 bottomRight;
+        public Vector2 topLeft;
+        public Vector2 topRight;
+    }
 
     Collider2D coll;
 
-
-    struct Boundary {
-        public float xMin;
-        public float xMax;
-        public float yMin;
-        public float yMax;
-    }
-    Boundary boundaries;
 
     // Start is called before the first frame update
     void Start()
@@ -40,11 +43,7 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
 
         texture = new Texture2D(originalTexture.width, originalTexture.height);
         texture.SetPixels(originalTexture.GetPixels());
-        // for(int j = 100; j < 120; j++) {
-        //     for(int i = 0; i < 588; i++) {
-        //         texture.SetPixel(i, j, transparent);
-        //     }
-        // }
+
         texture.Apply();
         runtimeSprite = Sprite.Create(texture, new Rect(0, 0, originalTexture.width, originalTexture.height), new Vector2(0.5f, 0.5f), 108f);
         spriteRenderer.sprite = runtimeSprite;
@@ -54,18 +53,28 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
         numberOfTouchedPixels = 0;
 
 
-        boundaries = new Boundary();
-        boundaries.xMin = transform.position.x - originalTexture.width / 2;
-        boundaries.xMax = transform.position.x + originalTexture.width / 2;
-        boundaries.yMin = transform.position.y - originalTexture.height / 2;
-        boundaries.yMax = transform.position.y + originalTexture.height / 2;
-
-        print(boundaries.xMin);
-        print(boundaries.xMax);
-        print(boundaries.yMin);
-        print(boundaries.yMax);
+        RecalculateScreenSpaceBounds(spriteRenderer.bounds);
     }
 
+    private void RecalculateScreenSpaceBounds(Bounds bounds)
+    {
+        Vector3 bottomLeftCorner = new Vector3(bounds.center.x - bounds.extents.x, bounds.center.y - bounds.extents.y);
+        Vector3 bottomRightCorner = new Vector3(bounds.center.x + bounds.extents.x, bounds.center.y - bounds.extents.y);
+        Vector3 topLeftCorner = new Vector3(bounds.center.x - bounds.extents.x, bounds.center.y + bounds.extents.y);
+        Vector3 topRightCorner = new Vector3(bounds.center.x + bounds.extents.x, bounds.center.y + bounds.extents.y);
+
+        boundaries.bottomLeft = Camera.main.WorldToScreenPoint(bottomLeftCorner);
+        boundaries.bottomRight = Camera.main.WorldToScreenPoint(bottomRightCorner);
+        boundaries.topLeft = Camera.main.WorldToScreenPoint(topLeftCorner);
+        boundaries.topRight = Camera.main.WorldToScreenPoint(topRightCorner);
+    }
+
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        RecalculateScreenSpaceBounds(spriteRenderer.bounds);
+        RemoveSteam(eventData.position);
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -74,21 +83,22 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
 
     private void RemoveSteam(Vector2 pointerPosition)
     {
-        Vector2 pointerInWorld = Camera.main.ScreenToWorldPoint(pointerPosition);
-        print(pointerInWorld);
-
         if(IsOutOfBounds(pointerPosition)) {
-            print("Out of bounds");
+            // print("Out of bounds");
             return;
         }
 
 
-        Vector2Int pointerPositionInGrid = new Vector2Int(Mathf.RoundToInt(pointerPosition.x / Screen.width * texture.width), 
-                                                    Mathf.RoundToInt(pointerPosition.y / Screen.height * texture.height));
+        Vector2Int pointerPositionInGrid = new Vector2Int(
+            Mathf.Clamp(Mathf.RoundToInt((pointerPosition.x - boundaries.bottomLeft.x) / (boundaries.bottomRight.x - boundaries.bottomLeft.x) * texture.width), 0, texture.width), 
+            Mathf.Clamp(Mathf.RoundToInt((pointerPosition.y - boundaries.bottomLeft.y) / (boundaries.topLeft.y - boundaries.bottomLeft.y) * texture.height), 0, texture.height)
+        );
 
         for (int i = -radius ; i < radius; i++) {
+            if (pointerPositionInGrid.x + i < 0 || texture.width < pointerPositionInGrid.x + i) continue;
             for (int j = -radius; j < radius; j++) {
-                if(i*i + j*j <= radius*radius) {
+                if (pointerPositionInGrid.y + j < 0 || texture.height < pointerPositionInGrid.y + j) continue; 
+                if (i*i + j*j <= radius*radius) {
                     if(texture.GetPixel(pointerPositionInGrid.x + i,  pointerPositionInGrid.y + j).a != 0) {
                         numberOfTouchedPixels++;
                         texture.SetPixel(pointerPositionInGrid.x + i, pointerPositionInGrid.y + j, transparent);
@@ -101,26 +111,25 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
     }
 
     bool IsOutOfBounds(Vector2 pointerOnScreen) {
-        // if(pointerInWorld.x < boundaries.xMin || pointerInWorld.x > boundaries.xMax ||
-        // pointerInWorld.y < boundaries.yMin || pointerInWorld.y > boundaries.yMax) {
-        //     print("Out of bounds");
-        //     return;
-        // }
-        return false;
+        return !_isHovering;
+    }
+
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _isHovering = false;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _isHovering = true;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        coll.enabled = true;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        coll.enabled = false;
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        RemoveSteam(eventData.position);
     }
 }
