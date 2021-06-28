@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(MultiClickable))]
-public class FoodPlate : MonoBehaviour
+public class FoodPlate : TaskBehaviour
 {
     public List<Sprite> spriteSequence;
     private int _currentState;
@@ -13,7 +13,7 @@ public class FoodPlate : MonoBehaviour
     MultiClickable clickable;
     SpriteRenderer spriteRenderer;
 
-    public UnityEvent completeResponse;
+    // public UnityEvent completeResponse;
 
 
     // Start is called before the first frame update
@@ -50,8 +50,12 @@ public class FoodPlate : MonoBehaviour
         }
     }
 
-    void OnComplete() {
-        Debug.Log("Task completed");
-        completeResponse?.Invoke();
+    public override void ActivateTask()
+    {
     }
+
+    // void OnComplete() {
+    //     Debug.Log("Task completed");
+    //     completeResponse?.Invoke();
+    // }
 }

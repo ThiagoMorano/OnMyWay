@@ -2,14 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerExitHandler, IPointerEnterHandler
+public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerExitHandler, IPointerEnterHandler
 {
     public int radius = 50;
 
     [Tooltip("The task is considered completed once this percentage of wiped steam has been achieved")]
-    public float percentageForCompletion =  0.7f;
+    public float percentageForCompletion =  0.6f;
     int numberOfTouchedPixels;
 
     SpriteRenderer spriteRenderer;
@@ -18,6 +19,7 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
     Texture2D texture;
     Color transparent = new Color(0, 0, 0, 0);
 
+    bool _completed;
     bool _isHovering;
 
     Boundary boundaries;
@@ -29,6 +31,9 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
     }
 
     Collider2D coll;
+
+    // public UnityEvent completeResponse;
+    // public Action onCompleteCallback;
 
 
     // Start is called before the first frame update
@@ -79,6 +84,7 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
     public void OnDrag(PointerEventData eventData)
     {
         RemoveSteam(eventData.position);
+        CheckCompletion();
     }
 
     private void RemoveSteam(Vector2 pointerPosition)
@@ -114,6 +120,23 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
         return !_isHovering;
     }
 
+    private void CheckCompletion()
+    {
+        if(!_completed) {
+            if (((float)numberOfTouchedPixels) / (texture.width * texture.height) > percentageForCompletion) {
+                _completed = true;
+                OnComplete();
+            }
+        }
+    }
+
+    // private void OnComplete()
+    // {
+    //     Debug.Log("Task completed");
+
+    //     if(onCompleteCallback != null) onCompleteCallback();
+    //     completeResponse?.Invoke();
+    // }
 
     public void OnPointerExit(PointerEventData eventData)
     {
@@ -131,5 +154,10 @@ public class HideAreasOnTouch : MonoBehaviour, IDragHandler, IBeginDragHandler, 
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+    }
+
+    public override void ActivateTask()
+    {
+        coll.enabled = true;
     }
 }
