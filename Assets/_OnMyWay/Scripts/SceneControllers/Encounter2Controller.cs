@@ -3,16 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class Encounter2Controller : MonoBehaviour
 {
-    public List<TaskBehaviour> sceneTasks;
+    public List<TaskBehaviour> sceneTask;
     public TimelineController timelineController;
     public Button nextButton;
-    public int nextScene;
 
-    int currentTaskIndex = 0;
+    public GameObject nextEncounter;
+
+    int currentTask = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,7 @@ public class SceneController : MonoBehaviour
         nextButton.gameObject.SetActive(false);
         nextButton.GetComponent<Image>().color = new Color(1, 1, 1, 0);
 
-        currentTaskIndex = 0;
-        foreach(var task in sceneTasks) {
+        foreach(var task in sceneTask) {
             task.onCompleteCallback += TaskCompleted;
         }
 
@@ -38,12 +37,12 @@ public class SceneController : MonoBehaviour
     }
 
     public void ActivateTask() {
-        sceneTasks[currentTaskIndex].ActivateTask();
+        sceneTask[0].ActivateTask();
     }
 
 
     private void TaskCompleted() {
-        currentTaskIndex++;
+        currentTask++;
         timelineController.ResumeTimeline();
     }
 
@@ -57,6 +56,6 @@ public class SceneController : MonoBehaviour
     }
 
     private void OnSceneFinished() {
-        SceneManager.LoadScene(nextScene);
+        nextEncounter.SetActive(true);
     }
 }

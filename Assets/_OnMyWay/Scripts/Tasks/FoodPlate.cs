@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(MultiClickable))]
+[RequireComponent(typeof(ClickableElement))]
 public class FoodPlate : TaskBehaviour
 {
     public List<Sprite> spriteSequence;
     private int _currentState;
 
-    MultiClickable clickable;
+    ClickableElement clickable;
     SpriteRenderer spriteRenderer;
 
     // public UnityEvent completeResponse;
@@ -22,7 +22,7 @@ public class FoodPlate : TaskBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         this.SetState(0);
 
-        clickable = GetComponent<MultiClickable>();
+        clickable = GetComponent<ClickableElement>();
         clickable.onPointerUpCallback += Interact;
     }
 

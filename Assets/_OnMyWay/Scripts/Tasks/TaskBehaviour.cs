@@ -7,12 +7,13 @@ using UnityEngine.EventSystems;
 
 public abstract class TaskBehaviour : MonoBehaviour
 {
+    [Tooltip("Not necessary to be filled. Responses could be added as Action callbacks")]
     public UnityEvent completeResponse;
     public Action onCompleteCallback;
 
     protected void OnComplete()
     {
-        Debug.Log("Task completed");
+        Debug.Log(gameObject.name + " task completed");
 
         if(onCompleteCallback != null) onCompleteCallback();
         completeResponse?.Invoke();

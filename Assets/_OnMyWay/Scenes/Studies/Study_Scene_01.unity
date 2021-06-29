@@ -722,7 +722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574c05e569ea19b40aa5a2cf14872243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneTask: {fileID: 774903259}
+  sceneTasks:
+  - {fileID: 774903259}
   timelineController: {fileID: 1335066784}
   nextButton: {fileID: 558164128}
   nextScene: 1

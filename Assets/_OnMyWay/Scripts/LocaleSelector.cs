@@ -12,21 +12,21 @@ public class LocaleSelector : MonoBehaviour
 {
     public string localeCode = "en";
     public Locale locale;
-    public bool selected = false;
+    public bool hoveredState = false;
 
     [SerializeField]
     public IMyInterface interfaceTest;
 
     IEnumerator Start()
     {
-        selected = false;
+        hoveredState = false;
         // Wait for the localization system to initialize
         yield return LocalizationSettings.InitializationOperation;
 
         Debug.Log(LocalizationSettings.SelectedLocale.Identifier.Code);
 
         if(LocalizationSettings.SelectedLocale.Identifier.Code == locale.Identifier.Code) {
-            selected = true;
+            hoveredState = true;
         }
     }
 
