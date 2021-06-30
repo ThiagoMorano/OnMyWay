@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/_OnMyWay/Scenes/Studies/Study_Scene_02.unity
     guid: 75b3a391c82b6c641aba2fc6041e4382
   - enabled: 1
-    path: Assets/_OnMyWay/Scenes/Studies/TestScene.unity
+    path: Assets/_OnMyWay/Scenes/Studies/Study_Localization.unity
     guid: d1ddea9e639ea1b44a9d9c966c0d63fd
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ec5837e79fef50a49873e61dba95b4d1, type: 2}

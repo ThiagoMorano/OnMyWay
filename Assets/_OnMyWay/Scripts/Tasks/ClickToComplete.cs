@@ -12,7 +12,8 @@ public class ClickToComplete : TaskBehaviour
     void Start()
     {
         coll = GetComponent<Collider2D>();
-        
+        coll.enabled = false;
+
         clickable = GetComponent<ClickableElement>();
         clickable.onPointerUpCallback += OnComplete;
     }

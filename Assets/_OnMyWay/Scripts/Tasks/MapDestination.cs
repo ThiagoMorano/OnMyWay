@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public GameObject hoveredState;
+    public LocalizedString noteLocalizationKey;
 
     bool _wasSelected = false;
     Collider2D _coll;

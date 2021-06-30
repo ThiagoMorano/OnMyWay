@@ -11,7 +11,7 @@ public abstract class TaskBehaviour : MonoBehaviour
     public UnityEvent completeResponse;
     public Action onCompleteCallback;
 
-    protected void OnComplete()
+    protected virtual void OnComplete()
     {
         Debug.Log(gameObject.name + " task completed");
 
