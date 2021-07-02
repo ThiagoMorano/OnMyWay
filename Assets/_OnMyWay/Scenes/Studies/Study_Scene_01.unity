@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &558164128 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1290167810383044155, guid: 54df88389f0333345b604b085c84b701, type: 3}
-  m_PrefabInstance: {fileID: 1290167809866905243}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &569201644
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +351,7 @@ MonoBehaviour:
   sceneTasks:
   - {fileID: 774903259}
   timelineController: {fileID: 1335066784}
-  nextButton: {fileID: 558164128}
+  nextButton: {fileID: 866789141}
   nextScene: 1
 --- !u!114 &695281111
 MonoBehaviour:
@@ -575,6 +564,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.4444447, y: 7.5555553}
   m_EdgeRadius: 0
+--- !u!114 &866789141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 740614693414570810, guid: 54df88389f0333345b604b085c84b701, type: 3}
+  m_PrefabInstance: {fileID: 1290167809866905243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &928379689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1290167810015053234, guid: 54df88389f0333345b604b085c84b701, type: 3}

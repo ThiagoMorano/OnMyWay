@@ -43,14 +43,16 @@ public class SelectDestination : TaskBehaviour
     }
 
     protected override void OnComplete() {
+        base.OnComplete();
         DisableTask();
         // RefereshDestinationNoteText();
-        base.OnComplete();
     }
 
     private void RefereshDestinationNoteText()
     {
         Debug.Log("RefreshDestinationNote");
+        Debug.Log(selectedDestination);
+        Debug.Log(selectedDestination.noteLocalizationKey);
         noteAboutDestination.StringReference = selectedDestination.noteLocalizationKey;
         noteAboutDestination.RefreshString();
     }

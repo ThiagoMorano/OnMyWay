@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 206033301}
   - component: {fileID: 206033300}
   - component: {fileID: 206033302}
+  - component: {fileID: 206033303}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -294,6 +295,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &206033303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206033298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532f61be76103fa458116c250c42a5af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &272676365
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localeCode: de
   locale: {fileID: 11400000, guid: 1f38b749e4de0964ca5d1013cff962f1, type: 2}
-  selected: 0
+  hoveredState: 0
 --- !u!1 &1249087624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localeCode: en
   locale: {fileID: 11400000, guid: 69e742a1ae43e7741ad256a634eba539, type: 2}
-  selected: 0
+  hoveredState: 0
 --- !u!1 &1664779854
 GameObject:
   m_ObjectHideFlags: 0

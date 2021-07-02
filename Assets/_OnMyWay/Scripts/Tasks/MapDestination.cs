@@ -33,9 +33,9 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     }
 
     private void Select() {
-        onSelectCallback();
         _wasSelected = true;
         _destinationTask.SetSelected(this);
+        onSelectCallback();
     }
 
     public void SetTaskItemActive(bool value) {
