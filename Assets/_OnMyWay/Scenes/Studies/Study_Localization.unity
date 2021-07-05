@@ -307,6 +307,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532f61be76103fa458116c250c42a5af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizeStringEvent: {fileID: 0}
+  _localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:6131ee5061d627e4097ab8746073d189
+  _currentStringTable: {fileID: 0}
 --- !u!1 &272676365
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,5 +26,51 @@ MonoBehaviour:
     m_Localized: Ich gehe nach Madrid!
     m_Metadata:
       m_Items: []
+  - m_Id: 1847347600961536
+    m_Localized: Ich gehe nach Paris!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847712417329152
+    m_Localized: Ich gehe nach Warschau!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847833540440064
+    m_Localized: Ich gehe nach London!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848377424228352
+    m_Localized: Auslandssemester ich komme!.. Aber wo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848533813047296
+    m_Localized: Zeit meine Sachen zu packen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849131031605248
+    m_Localized: Zuhause!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849367644876800
+    m_Localized: 'Warschau,
+
+      Polen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849734638088192
+    m_Localized: 'Paris,
+
+      Frankreich'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849856168046592
+    m_Localized: "London,\nVereinigtes K\xF6nigreich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1850139828826112
+    m_Localized: 'Madrid,
+
+      Spanien'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

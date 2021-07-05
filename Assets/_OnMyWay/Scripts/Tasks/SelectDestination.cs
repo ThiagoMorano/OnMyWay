@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 using UnityEngine.Localization.Components;
 
 public class SelectDestination : TaskBehaviour
@@ -12,6 +14,7 @@ public class SelectDestination : TaskBehaviour
     public LocalizeStringEvent noteAboutDestination;
 
     MapDestination selectedDestination;
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,15 +48,15 @@ public class SelectDestination : TaskBehaviour
     protected override void OnComplete() {
         base.OnComplete();
         DisableTask();
-        // RefereshDestinationNoteText();
+        RefereshDestinationNoteText();
     }
 
     private void RefereshDestinationNoteText()
     {
-        Debug.Log("RefreshDestinationNote");
-        Debug.Log(selectedDestination);
-        Debug.Log(selectedDestination.noteLocalizationKey);
-        noteAboutDestination.StringReference = selectedDestination.noteLocalizationKey;
+        noteAboutDestination.StringReference.SetReference(
+            selectedDestination.noteLocalizationKey.TableReference,
+            selectedDestination.noteLocalizationKey.TableEntryReference
+        );
         noteAboutDestination.RefreshString();
     }
 
@@ -64,5 +67,4 @@ public class SelectDestination : TaskBehaviour
         // hoveredStateDestination.hoveredState.SetActive(true);
         // this.SetPinActive(false);
     }
-
 }

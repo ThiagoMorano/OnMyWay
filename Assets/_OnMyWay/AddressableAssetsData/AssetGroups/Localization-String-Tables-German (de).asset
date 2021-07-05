@@ -23,7 +23,7 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
   - m_GUID: 19f1fe01a5c9ff6488c87d9626c43a36
-    m_Address: Journal_de
+    m_Address: Scene_3_de
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de

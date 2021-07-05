@@ -12,15 +12,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: Journal Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Journal
+  m_TableCollectionName: Scene_3
   m_TableCollectionNameGuidString: 99bd7f300630c5343a01a0fda7e72e56
   m_Entries:
   - m_Id: 23627051008
-    m_Key: select_destination
+    m_Key: scene_3_note_default
     m_Metadata:
       m_Items: []
   - m_Id: 117214556160
-    m_Key: select_destination_madrid
+    m_Key: scene_3_note_madrid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847347600961536
+    m_Key: scene_3_note_paris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847712417329152
+    m_Key: scene_3_note_warsaw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847833540440064
+    m_Key: scene_3_note_london
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848377424228352
+    m_Key: scene_3_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848533813047296
+    m_Key: scene_3_end
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849131031605248
+    m_Key: scene_3_home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849367644876800
+    m_Key: scene_3_map_warsaw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849734638088192
+    m_Key: scene_3_map_paris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1849856168046592
+    m_Key: scene_3_map_london
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1850139828826112
+    m_Key: scene_3_map_madrid
     m_Metadata:
       m_Items: []
   m_Metadata:
