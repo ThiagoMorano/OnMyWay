@@ -9,14 +9,15 @@ public class SuitcaseItem : MonoBehaviour
     DraggableItem draggableItem;
     Destination _destination;
 
-    Vector3 initialPosition;
-    bool _isPacked = false;
+    Vector3 _initialPosition;
+    [SerializeField] bool _isPacked = false;
+    [SerializeField] int _packedInSlot = -1;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        initialPosition = transform.position;
+        _initialPosition = transform.position;
 
         draggableItem = GetComponent<DraggableItem>();
         draggableItem.onEndDragCallback += OnStopDragging;
@@ -24,28 +25,65 @@ public class SuitcaseItem : MonoBehaviour
 
     private void OnStopDragging()
     {
-        if(!this._isPacked) {
-            if (_destination.IsHovering) {
-                AddToSuitcase();
-            } else {
+        if (this._isPacked)
+        {
+            if (_destination.IsHovering)
+            {
+                RemoveFromSuitcase();
+                if (_destination.HasAvailableSlot())
+                {
+                    AddToSuitcase();
+                }
+                else
+                {
+                    SetNewDefaultPosition(_initialPosition);
+                    ResetToDefaultPosition();
+                }
+            }
+            else
+            {
+                RemoveFromSuitcase();
+                SetNewDefaultPosition(_initialPosition);
                 ResetToDefaultPosition();
             }
-        } else {
-            if (_destination.IsHovering) {
+        }
+        else
+        {
+            if (_destination.IsHovering && _destination.HasAvailableSlot())
+            {
+                AddToSuitcase();
+            }
+            else
+            {
                 ResetToDefaultPosition();
-            } else {
-                RemoveFromSuitcase();
             }
         }
     }
+
+    private void RemoveFromSuitcase()
+    {
+        _destination.RemoveItemFromSlot(_packedInSlot);
+        _packedInSlot = -1;
+        _isPacked = false;
+    }
+
 
     private void AddToSuitcase()
     {
         _isPacked = true;
 
-        var slotPosition = _destination.GetClosestAvailableSlot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        draggableItem.SetDefaultPosition(slotPosition);
+        var slotIndex = _destination.GetClosestAvailableSlot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        var slotPosition = _destination.GetPositionOfSlot(slotIndex);
+        _destination.AddItemTo(this, slotIndex);
+        _packedInSlot = slotIndex;
+
+        SetNewDefaultPosition(slotPosition);
         transform.position = slotPosition;
+    }
+
+    private void SetNewDefaultPosition(Vector3 position)
+    {
+        draggableItem.SetDefaultPosition(position);
     }
 
     private void ResetToDefaultPosition()
@@ -54,16 +92,8 @@ public class SuitcaseItem : MonoBehaviour
     }
 
 
-    private void RemoveFromSuitcase()
+    public void SetDestinationReference(Destination destination)
     {
-        _isPacked = false;
-
-        transform.position = initialPosition;
-        draggableItem.SetDefaultPosition(initialPosition);
-    }
-
-
-    public void SetDestinationReference(Destination destination) {
         _destination = destination;
     }
 }

@@ -24,10 +24,10 @@ public class PackingTask : TaskBehaviour
 
     private void InstantiateSuitcaseItems(List<Transform> slots)
     {
-        if(slots == null || slots.Count == 0) return;
+        if (slots == null || slots.Count == 0) return;
 
         int numberOfBad = 2;
-        int numberOfGood = (int) UnityEngine.Random.Range(2, Math.Min(5, goodItems.Count));
+        int numberOfGood = (int)UnityEngine.Random.Range(2, Math.Min(5, goodItems.Count));
         int numberOfNormals = Math.Max(0, slots.Count - (numberOfBad + numberOfGood));
 
         List<int> usedBads = new List<int>();
@@ -43,15 +43,19 @@ public class PackingTask : TaskBehaviour
         InstantiateItems(numberOfNormals, normalItems, usedNormals, selectionOfObjects);
 
         // shuffle selectionOfObjects
-        for(int i = 0; i < slots.Count; i++) {
-            selectionOfObjects[i].transform.position = slots[i].position;
+        for (int i = 0; i < slots.Count; i++)
+        {
+            // selectionOfObjects[i].transform.position = slots[i].position;
+            selectionOfObjects[i].transform.SetParent(slots[i]);
+            selectionOfObjects[i].transform.localPosition = Vector3.zero;
             selectionOfObjects[i].GetComponent<SuitcaseItem>().SetDestinationReference(destination);
         }
     }
 
     private void InstantiateItems(int numberOfItems, List<GameObject> listOfItems, List<int> usedIndexes, List<GameObject> selectionOfObjects)
     {
-        for(int i = 0; i < numberOfItems; i++) {
+        for (int i = 0; i < numberOfItems; i++)
+        {
             int index = GetUnusedItem(listOfItems, usedIndexes);
             selectionOfObjects.Add(GameObject.Instantiate(listOfItems[index]));
             usedIndexes.Add(index);
@@ -60,16 +64,17 @@ public class PackingTask : TaskBehaviour
 
     private int GetUnusedItem(List<GameObject> listOfItems, List<int> usedIndexes)
     {
-        if(usedIndexes.Count == listOfItems.Count) {
+        if (usedIndexes.Count == listOfItems.Count)
+        {
             Debug.LogError("Already using all items of type");
             return 0;
         }
 
         int newIndex = -1;
-        do {
+        do
+        {
             newIndex = (int)UnityEngine.Random.Range(0, listOfItems.Count);
-            Debug.Log("newIndex = " + newIndex);
-        } while(usedIndexes.Contains(newIndex));
+        } while (usedIndexes.Contains(newIndex));
         return newIndex;
     }
 

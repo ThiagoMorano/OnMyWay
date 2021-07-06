@@ -17,6 +17,14 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: dd67fc3ad051f584f80045ef80217baa, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 88240304128
+    m_Localized: Monday
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303698937393152
+    m_Localized: What should I bring with me? I packed
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
