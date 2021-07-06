@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
 {
     public List<Transform> slots;
-    [SerializeField]
+
+
     private bool _isHovering;
     public bool IsHovering { get {return _isHovering; } }
 

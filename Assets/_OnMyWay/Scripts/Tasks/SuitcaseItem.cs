@@ -7,7 +7,7 @@ using UnityEngine;
 public class SuitcaseItem : MonoBehaviour
 {
     DraggableItem draggableItem;
-    public Destination destination;
+    Destination _destination;
 
     Vector3 initialPosition;
     bool _isPacked = false;
@@ -25,13 +25,13 @@ public class SuitcaseItem : MonoBehaviour
     private void OnStopDragging()
     {
         if(!this._isPacked) {
-            if (destination.IsHovering) {
+            if (_destination.IsHovering) {
                 AddToSuitcase();
             } else {
                 ResetToDefaultPosition();
             }
         } else {
-            if (destination.IsHovering) {
+            if (_destination.IsHovering) {
                 ResetToDefaultPosition();
             } else {
                 RemoveFromSuitcase();
@@ -43,7 +43,7 @@ public class SuitcaseItem : MonoBehaviour
     {
         _isPacked = true;
 
-        var slotPosition = destination.GetClosestAvailableSlot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        var slotPosition = _destination.GetClosestAvailableSlot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         draggableItem.SetDefaultPosition(slotPosition);
         transform.position = slotPosition;
     }
@@ -60,5 +60,10 @@ public class SuitcaseItem : MonoBehaviour
 
         transform.position = initialPosition;
         draggableItem.SetDefaultPosition(initialPosition);
+    }
+
+
+    public void SetDestinationReference(Destination destination) {
+        _destination = destination;
     }
 }

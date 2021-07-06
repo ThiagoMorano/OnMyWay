@@ -10,7 +10,7 @@ public class SceneController : MonoBehaviour
     public List<TaskBehaviour> sceneTasks;
     public TimelineController timelineController;
     public Button nextButton;
-    public int nextScene;
+    public string nextScene;
 
     int currentTaskIndex = 0;
 
@@ -22,7 +22,11 @@ public class SceneController : MonoBehaviour
 
         currentTaskIndex = 0;
         foreach(var task in sceneTasks) {
-            task.onCompleteCallback += TaskCompleted;
+            if (task != null) {
+                task.onCompleteCallback += TaskCompleted;
+            } else {
+                Debug.LogWarning("Null objects in list of tasks.");
+            }
         }
 
         nextButton.onClick.AddListener(() => {
