@@ -9,9 +9,15 @@ public class TimelineController : MonoBehaviour
 {
     public Action onDirectorFinishedCallback;
 
-    [SerializeField]
-    bool _isPaused = false;
+    [SerializeField] bool _isPaused = false;
     PlayableDirector playableDirector;
+
+
+    bool _greenTipOpen = false;
+
+    public void SetGreenTipOpen(bool value) {
+        _greenTipOpen = value;
+    }
 
     // public List<PlayableDirector> nextScenes;
     // [SerializeField]
@@ -26,14 +32,14 @@ public class TimelineController : MonoBehaviour
         playableDirector.stopped += OnDirectorFinished;
     }
 
-    void OnDisable () {
+    void OnDisable()
+    {
         playableDirector.stopped -= OnDirectorFinished;
     }
 
-    public void OnDirectorFinished(PlayableDirector pb) {
-        // Debug.Log(pb.name + " has stopped");
-
-        if(onDirectorFinishedCallback != null) onDirectorFinishedCallback();
+    public void OnDirectorFinished(PlayableDirector pb)
+    {
+        if (onDirectorFinishedCallback != null) onDirectorFinishedCallback();
 
         playableDirector.stopped -= OnDirectorFinished;
 
@@ -44,23 +50,31 @@ public class TimelineController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isPaused) {
+        if (_isPaused)
+        {
             playableDirector.DeferredEvaluate();
         }
     }
 
-    public void PauseTimeline() {
+    public void PauseTimeline()
+    {
         playableDirector.Pause();
         _isPaused = true;
     }
 
-    public void ResumeTimeline() {
-        playableDirector.Resume();
-        _isPaused = false;
+    public void ResumeTimeline()
+    {
+        if (CanResume())
+        {
+            playableDirector.Resume();
+            _isPaused = false;
+        }
     }
 
-
-    // public void SetTransitionTo(int index) {
-    //     _transitionTo = index;
-    // }
+    private bool CanResume()
+    {
+        // return !(_greenTipOpen || _settingsOpen);
+        return !_greenTipOpen;
+        // return true;
+    }
 }

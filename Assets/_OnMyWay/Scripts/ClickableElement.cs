@@ -10,8 +10,8 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public Action onPointerDownCallback;
     public Action onPointerUpCallback;
 
-    // public UnityEvent pointerDownResponse;
-    // public UnityEvent pointerUpResponse;
+    public UnityEvent pointerDownResponse;
+    public UnityEvent pointerUpResponse;
 
     bool _pointerHovering;
 
@@ -32,6 +32,7 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         if(onPointerDownCallback != null) {
             onPointerDownCallback();
         }
+        pointerDownResponse?.Invoke();
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -42,5 +43,6 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
                 onPointerUpCallback();
             }
         }
+        pointerUpResponse?.Invoke();
     }
 }
