@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 public class PackingTask : TaskBehaviour
 {
@@ -9,17 +11,25 @@ public class PackingTask : TaskBehaviour
     [SerializeField] List<GameObject> badItems;
     [SerializeField] List<GameObject> normalItems;
 
-    [SerializeField] Destination destination;
+    Destination _destination;
 
     public List<Transform> startingSlots;
 
     private List<GameObject> selectionOfObjects;
 
+    public ClickableElement confirmButton;
+    public LocalizeStringEvent feedbackText;
+    public LocalizeStringEvent badItemFeedback;
+
     // Start is called before the first frame update
     void Start()
     {
-        destination = FindObjectOfType<Destination>();
+        _destination = FindObjectOfType<Destination>();
         InstantiateSuitcaseItems(startingSlots);
+
+        _destination.onAllItemsPlacedCallback += RefreshFeedbackTexts;
+
+        confirmButton.onPointerUpCallback += OnComplete;
     }
 
     private void InstantiateSuitcaseItems(List<Transform> slots)
@@ -48,7 +58,7 @@ public class PackingTask : TaskBehaviour
             // selectionOfObjects[i].transform.position = slots[i].position;
             selectionOfObjects[i].transform.SetParent(slots[i]);
             selectionOfObjects[i].transform.localPosition = Vector3.zero;
-            selectionOfObjects[i].GetComponent<SuitcaseItem>().SetDestinationReference(destination);
+            selectionOfObjects[i].GetComponent<SuitcaseItem>().SetDestinationReference(_destination);
         }
     }
 
@@ -78,14 +88,38 @@ public class PackingTask : TaskBehaviour
         return newIndex;
     }
 
-    public override void ActivateTask()
-    {
 
+
+    private void RefreshFeedbackTexts()
+    {
+        badItemFeedback.gameObject.SetActive(HasBadItemPacked(_destination.itemsStored));
+    }
+
+    private bool HasBadItemPacked(SuitcaseItem[] itemsStored)
+    {
+        for(int i = 0; i < itemsStored.Length; i++) {
+            if(itemsStored[i].cathegory == SuitcaseItem.PackCathegory.BAD) {
+                return true;
+            }
+        }
+        return false;
     }
 
 
     // Update is called once per frame
     void Update()
+    {
+        if (confirmButton != null)
+        {
+            bool activeValue = _destination.IsComplete;
+            confirmButton.gameObject.SetActive(activeValue);
+            feedbackText.gameObject.SetActive(activeValue);
+        }
+    }
+
+
+
+    public override void ActivateTask()
     {
 
     }

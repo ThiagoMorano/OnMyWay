@@ -23,6 +23,50 @@ MonoBehaviour:
     m_Key: scene_5_header
     m_Metadata:
       m_Items: []
+  - m_Id: 346119838642176
+    m_Key: scene_5_bag_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347940963495936
+    m_Key: scene_5_cup_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347989034414080
+    m_Key: scene_5_ebook_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348044915126272
+    m_Key: scene_5_shampoo_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348160292040704
+    m_Key: scene_5_books_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348198657339392
+    m_Key: scene_5_bottles_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348298188173312
+    m_Key: scene_5_bad_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350340793249792
+    m_Key: scene_5_fallback_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354677149937664
+    m_Key: scene_5_end
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354715414573056
+    m_Key: scene_5_tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354816686043136
+    m_Key: scene_5_tip_mama
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

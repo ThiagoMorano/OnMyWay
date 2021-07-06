@@ -8,15 +8,22 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
 {
     public List<Transform> slots;
     [SerializeField] private bool[] _slotsInUse;
-    [SerializeField] private SuitcaseItem[] _itemsStored;
+    [SerializeField] public SuitcaseItem[] itemsStored;
 
     private bool _isHovering;
     public bool IsHovering { get { return _isHovering; } }
 
+    private int _itemCounter;
+    private bool _isComplete;
+    public bool IsComplete { get { return _isComplete; } }
+
+    public Action onAllItemsPlacedCallback;
+
     void Start()
     {
         _slotsInUse = new bool[slots.Count];
-        _itemsStored = new SuitcaseItem[slots.Count];
+        itemsStored = new SuitcaseItem[slots.Count];
+        _itemCounter = 0;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -67,13 +74,23 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
         }
 
         _slotsInUse[slotIndex] = true;
-        _itemsStored[slotIndex] = suitcaseItem;
+        itemsStored[slotIndex] = suitcaseItem;
+        _itemCounter++;
+        if (_itemCounter == slots.Count)
+        {
+            _isComplete = true;
+            if(onAllItemsPlacedCallback != null) {
+                onAllItemsPlacedCallback();
+            }
+        }
     }
 
     public void RemoveItemFromSlot(int slotIndex)
     {
         _slotsInUse[slotIndex] = false;
-        _itemsStored[slotIndex] = null;
+        itemsStored[slotIndex] = null;
+        _itemCounter--;
+        _isComplete = false;
     }
 
 

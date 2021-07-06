@@ -10,6 +10,9 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public Action onPointerDownCallback;
     public Action onPointerUpCallback;
 
+    // public UnityEvent pointerDownResponse;
+    // public UnityEvent pointerUpResponse;
+
     bool _pointerHovering;
 
     public void OnPointerEnter(PointerEventData eventData)

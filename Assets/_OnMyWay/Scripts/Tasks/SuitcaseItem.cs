@@ -6,6 +6,12 @@ using UnityEngine;
 [RequireComponent(typeof(DraggableItem))]
 public class SuitcaseItem : MonoBehaviour
 {
+    public enum PackCathegory {
+        BAD,
+        GOOD,
+        NORMAL
+    }
+
     DraggableItem draggableItem;
     Destination _destination;
 
@@ -13,6 +19,7 @@ public class SuitcaseItem : MonoBehaviour
     [SerializeField] bool _isPacked = false;
     [SerializeField] int _packedInSlot = -1;
 
+    public PackCathegory cathegory;
 
     // Start is called before the first frame update
     void Start()

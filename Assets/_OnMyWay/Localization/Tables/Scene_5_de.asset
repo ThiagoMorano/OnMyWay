@@ -23,7 +23,57 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 303698937393152
-    m_Localized: Was soll ich mitnehmen? Ich habe
+    m_Localized: Was soll ich mitnehmen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346119838642176
+    m_Localized: "Ich habe alles was ich brauche, genauso wie eine Tasche die den
+      ganzen Trip lang h\xE4lt. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347940963495936
+    m_Localized: 'Ich habe alles was ich brauche, genauso wie einen Kaffeebecher
+      aus Gummi. Ein echter Lebensretter. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347989034414080
+    m_Localized: "Ich habe alles was ich brauche, genauso wie alle B\xFCcher die
+      ich lesen wollte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348044915126272
+    m_Localized: Ich habe alles was ich brauche, genauso wie das beste Shampoo, das
+      jemals gemacht wurde!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348160292040704
+    m_Localized: Ich habe alles was ich brauche, genauso wie eine ganze Bibliothek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348198657339392
+    m_Localized: 'Ich habe alles was ich brauche, genauso wie genug Wasser um meinen
+      Durst zu stillen. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348298188173312
+    m_Localized: Und einige andere Dinge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350340793249792
+    m_Localized: Ich habe alles was ich brauche.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354677149937664
+    m_Localized: ...ich glaube ist das alles?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354715414573056
+    m_Localized: "Packe leicht und denk an deine wiederverwendbaren Dinge - die sind
+      super n\xFCtzlich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354816686043136
+    m_Localized: <3 Mama
     m_Metadata:
       m_Items: []
   references:

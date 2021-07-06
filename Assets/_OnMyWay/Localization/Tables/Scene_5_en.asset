@@ -23,7 +23,55 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 303698937393152
-    m_Localized: What should I bring with me? I packed
+    m_Localized: What should I bring with me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346119838642176
+    m_Localized: I packed everything I need, including a nice bag that will last
+      me through the whole trip.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347940963495936
+    m_Localized: I packed everything I need, including a rubber coffee cup, a literal
+      life savior.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347989034414080
+    m_Localized: I packed everything I need, including all books that I wanted to
+      read.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348044915126272
+    m_Localized: I packed everything I need, including the best shampoo ever made!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348160292040704
+    m_Localized: I packed everything I need and a whole library.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348198657339392
+    m_Localized: I packed everything I need and lots of water for all my drinking
+      needs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348298188173312
+    m_Localized: And some other stuff.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350340793249792
+    m_Localized: I packed everything I need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354677149937664
+    m_Localized: ...I think that's it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354715414573056
+    m_Localized: Pack light & remeber your reusables - they are super useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354816686043136
+    m_Localized: <3 Mom
     m_Metadata:
       m_Items: []
   references:
