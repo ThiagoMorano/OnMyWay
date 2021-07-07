@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 246691f483954e948920e5ab4bd7aad0
+guid: bbf45a8d68588144bb429cfa080af0d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7513414389928051291
-    second: Sprites_Settings 1_0
+      213: -3131094126876290681
+    second: Sprites_Scene03_J_London_0
   - first:
-      213: 6125042966713934708
-    second: Sprites_Settings 1_1
+      213: 5033304999192801724
+    second: Sprites_Scene03_J_London_1
   - first:
-      213: -8263105156253225558
-    second: Sprites_Settings 1_2
+      213: -7627830957395993674
+    second: Sprites_Scene03_J_London_2
   - first:
-      213: -432084067351368019
-    second: Sprites_Settings 1_3
+      213: -7109629051544285389
+    second: Sprites_Scene03_J_London_3
   - first:
-      213: 5564866432167767320
-    second: Sprites_Settings 1_4
+      213: 5910055461630660886
+    second: Sprites_Scene03_J_London_4
   - first:
-      213: 8335182702208854595
-    second: Sprites_Settings 1_5
+      213: -1772896592240289017
+    second: Sprites_Scene03_J_London_5
   - first:
-      213: -333106021882614568
-    second: Sprites_Settings 1_6
+      213: -7544090677755791748
+    second: Sprites_Scene03_J_London_6
   - first:
-      213: 4467007541284944574
-    second: Sprites_Settings 1_7
+      213: -5957345022193441123
+    second: Sprites_Scene03_J_London_7
   - first:
-      213: -1526431488371169818
-    second: Sprites_Settings 1_8
+      213: -266137764251223536
+    second: Sprites_Scene03_J_London_8
+  - first:
+      213: 1289908481230336027
+    second: Sprites_Scene03_J_London_9
+  - first:
+      213: -7776713181009205382
+    second: Sprites_Scene03_J_London_10
+  - first:
+      213: -5615071811517000913
+    second: Sprites_Scene03_J_London_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,169 +175,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprites_Settings 1_0
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 593
-        width: 1238
-        height: 868
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5248f17492054860800000000000000
-      internalID: 7513414389928051291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_1
+      name: Sprites_Scene03_J_London_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 557
-        height: 536
+        y: 494.6667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4732df85026800550800000000000000
-      internalID: 6125042966713934708
+      spriteID: 7811a391b7e1c84d0800000000000000
+      internalID: -3131094126876290681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_2
+      name: Sprites_Scene03_J_London_1
       rect:
         serializedVersion: 2
-        x: 583
-        y: 496
-        width: 372
-        height: 41
+        x: 515
+        y: 494.6667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aade3d3e3ad835d80800000000000000
-      internalID: -8263105156253225558
+      spriteID: cb1b51baa34e9d540800000000000000
+      internalID: 5033304999192801724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_4
+      name: Sprites_Scene03_J_London_2
       rect:
         serializedVersion: 2
-        x: 583
-        y: 386
-        width: 245
-        height: 94
+        x: 1030
+        y: 494.6667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81deadf39806a3d40800000000000000
-      internalID: 5564866432167767320
+      spriteID: 6bb1fa18820842690800000000000000
+      internalID: -7627830957395993674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_5
+      name: Sprites_Scene03_J_London_3
       rect:
         serializedVersion: 2
-        x: 850
-        y: 405
-        width: 71
-        height: 75
+        x: 1545
+        y: 494.6667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34aa32781848ca370800000000000000
-      internalID: 8335182702208854595
+      spriteID: 33fc7e9cb06855d90800000000000000
+      internalID: -7109629051544285389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_6
+      name: Sprites_Scene03_J_London_4
       rect:
         serializedVersion: 2
-        x: 936
-        y: 400
-        width: 83
-        height: 80
+        x: 0
+        y: 247.66667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dca42586d1906bf0800000000000000
-      internalID: -333106021882614568
+      spriteID: 6115a59212cb40250800000000000000
+      internalID: 5910055461630660886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_7
+      name: Sprites_Scene03_J_London_5
       rect:
         serializedVersion: 2
-        x: 583
-        y: 235
-        width: 126
-        height: 124
+        x: 515
+        y: 247.66667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebab74b01bffdfd30800000000000000
-      internalID: 4467007541284944574
+      spriteID: 70b540c41f76567e0800000000000000
+      internalID: -1772896592240289017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_8
+      name: Sprites_Scene03_J_London_6
       rect:
         serializedVersion: 2
-        x: 735
-        y: 218
-        width: 131
-        height: 134
+        x: 1030
+        y: 247.66667
+        width: 515
+        height: 247.33333
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e56aa116a601dae0800000000000000
-      internalID: -1526431488371169818
+      spriteID: c76b707bf710e4790800000000000000
+      internalID: -7544090677755791748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_London_7
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 247.66667
+        width: 515
+        height: 247.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96e7b30442435da0800000000000000
+      internalID: -5957345022193441123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_London_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.66667175
+        width: 515
+        height: 247.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a3d7c0d1d7e4cf0800000000000000
+      internalID: -266137764251223536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_London_9
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0.66667175
+        width: 515
+        height: 247.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b107f70fdeca6e110800000000000000
+      internalID: 1289908481230336027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_London_10
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 0.66667175
+        width: 515
+        height: 247.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7729dd8090931490800000000000000
+      internalID: -7776713181009205382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_London_11
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 0.66667175
+        width: 515
+        height: 247.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f235836ffe14312b0800000000000000
+      internalID: -5615071811517000913
       vertices: []
       indices: 
       edges: []
@@ -336,7 +429,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f81e68d59070c644b1a28ec786221d3
+    spriteID: 088bcf358d65aa34eb8d647dcecb0a5d
     internalID: 0
     vertices: []
     indices: 

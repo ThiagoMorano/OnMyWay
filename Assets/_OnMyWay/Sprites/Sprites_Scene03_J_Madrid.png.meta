@@ -1,34 +1,49 @@
 fileFormatVersion: 2
-guid: 246691f483954e948920e5ab4bd7aad0
+guid: 23fbe3e0ab0fd8740b5a76ea7f431efd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7513414389928051291
-    second: Sprites_Settings 1_0
+      213: -4976986539007578367
+    second: Sprites_Scene03_J_Madrid_0
   - first:
-      213: 6125042966713934708
-    second: Sprites_Settings 1_1
+      213: -4510457384508329816
+    second: Sprites_Scene03_J_Madrid_1
   - first:
-      213: -8263105156253225558
-    second: Sprites_Settings 1_2
+      213: -1003784911819715015
+    second: Sprites_Scene03_J_Madrid_2
   - first:
-      213: -432084067351368019
-    second: Sprites_Settings 1_3
+      213: -1275119427562331170
+    second: Sprites_Scene03_J_Madrid_3
   - first:
-      213: 5564866432167767320
-    second: Sprites_Settings 1_4
+      213: 8983954202680802710
+    second: Sprites_Scene03_J_Madrid_4
   - first:
-      213: 8335182702208854595
-    second: Sprites_Settings 1_5
+      213: -1216034359481641895
+    second: Sprites_Scene03_J_Madrid_5
   - first:
-      213: -333106021882614568
-    second: Sprites_Settings 1_6
+      213: -4921144076681820366
+    second: Sprites_Scene03_J_Madrid_6
   - first:
-      213: 4467007541284944574
-    second: Sprites_Settings 1_7
+      213: -9208275505011318044
+    second: Sprites_Scene03_J_Madrid_7
   - first:
-      213: -1526431488371169818
-    second: Sprites_Settings 1_8
+      213: 856626226010850406
+    second: Sprites_Scene03_J_Madrid_8
+  - first:
+      213: -3098480203034594215
+    second: Sprites_Scene03_J_Madrid_9
+  - first:
+      213: -4948183908773716060
+    second: Sprites_Scene03_J_Madrid_10
+  - first:
+      213: 1526858303256324402
+    second: Sprites_Scene03_J_Madrid_11
+  - first:
+      213: -1271529749879232460
+    second: Sprites_Scene03_J_Madrid_12
+  - first:
+      213: -1946035472447362099
+    second: Sprites_Scene03_J_Madrid_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,169 +181,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprites_Settings 1_0
+      name: Sprites_Scene03_J_Madrid_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 593
-        width: 1238
-        height: 868
+        x: 0
+        y: 1818
+        width: 576
+        height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5248f17492054860800000000000000
-      internalID: 7513414389928051291
+      spriteID: 10f6d8aac113eeab0800000000000000
+      internalID: -4976986539007578367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_1
+      name: Sprites_Scene03_J_Madrid_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1818
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0f7ddf7e2a761c0800000000000000
+      internalID: -4510457384508329816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1818
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ec614e0f6d112f0800000000000000
+      internalID: -1003784911819715015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_3
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1818
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3a2f1f2addd4ee0800000000000000
+      internalID: -1275119427562331170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1212
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dba219fba6dac70800000000000000
+      internalID: 8983954202680802710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1212
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9545d606137cf1fe0800000000000000
+      internalID: -1216034359481641895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1212
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237ccdc198594bbb0800000000000000
+      internalID: -4921144076681820366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_7
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1212
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2aed93732a53080800000000000000
+      internalID: -9208275505011318044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66409a2930953eb00800000000000000
+      internalID: 856626226010850406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 606
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954fa8afbacfff4d0800000000000000
+      internalID: -3098480203034594215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 606
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af1d3a93f4845bb0800000000000000
+      internalID: -4948183908773716060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_11
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 606
+        width: 576
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239e2f3898d703510800000000000000
+      internalID: 1526858303256324402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene03_J_Madrid_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 557
-        height: 536
+        width: 576
+        height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4732df85026800550800000000000000
-      internalID: 6125042966713934708
+      spriteID: 4386b19ed6e9a5ee0800000000000000
+      internalID: -1271529749879232460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Settings 1_2
+      name: Sprites_Scene03_J_Madrid_13
       rect:
         serializedVersion: 2
-        x: 583
-        y: 496
-        width: 372
-        height: 41
+        x: 576
+        y: 0
+        width: 576
+        height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aade3d3e3ad835d80800000000000000
-      internalID: -8263105156253225558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_4
-      rect:
-        serializedVersion: 2
-        x: 583
-        y: 386
-        width: 245
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81deadf39806a3d40800000000000000
-      internalID: 5564866432167767320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_5
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 405
-        width: 71
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34aa32781848ca370800000000000000
-      internalID: 8335182702208854595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_6
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 400
-        width: 83
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8dca42586d1906bf0800000000000000
-      internalID: -333106021882614568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_7
-      rect:
-        serializedVersion: 2
-        x: 583
-        y: 235
-        width: 126
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebab74b01bffdfd30800000000000000
-      internalID: 4467007541284944574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Settings 1_8
-      rect:
-        serializedVersion: 2
-        x: 735
-        y: 218
-        width: 131
-        height: 134
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e56aa116a601dae0800000000000000
-      internalID: -1526431488371169818
+      spriteID: dcb27706c0b4ef4e0800000000000000
+      internalID: -1946035472447362099
       vertices: []
       indices: 
       edges: []
@@ -336,7 +477,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f81e68d59070c644b1a28ec786221d3
+    spriteID: c05d39da7223c6b4789dd4c0dfa38415
     internalID: 0
     vertices: []
     indices: 

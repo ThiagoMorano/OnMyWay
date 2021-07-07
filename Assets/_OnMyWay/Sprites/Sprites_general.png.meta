@@ -41,6 +41,12 @@ TextureImporter:
   - first:
       213: 6080078084251845490
     second: Sprites_general_12
+  - first:
+      213: -842934417233137899
+    second: Sprites_general_13
+  - first:
+      213: 8586405590501980439
+    second: Sprites_general_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -446,6 +452,48 @@ TextureImporter:
       bones: []
       spriteID: 2730872ddc6c06450800000000000000
       internalID: 6080078084251845490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_general_13
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 249
+        width: 465
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f2ed31d9b4d44f0800000000000000
+      internalID: -842934417233137899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_general_14
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 65
+        width: 414
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7197c4f446a092770800000000000000
+      internalID: 8586405590501980439
       vertices: []
       indices: 
       edges: []
