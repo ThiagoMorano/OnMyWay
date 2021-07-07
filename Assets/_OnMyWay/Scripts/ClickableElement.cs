@@ -28,7 +28,6 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Pointer Down");
         if(onPointerDownCallback != null) {
             onPointerDownCallback();
         }
@@ -38,7 +37,6 @@ public class ClickableElement : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public void OnPointerUp(PointerEventData eventData)
     {
         if(_pointerHovering) {
-            Debug.Log("Pointer Up");
             if(onPointerUpCallback != null) {
                 onPointerUpCallback();
             }

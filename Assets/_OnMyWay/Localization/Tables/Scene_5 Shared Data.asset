@@ -67,6 +67,78 @@ MonoBehaviour:
     m_Key: scene_5_tip_mama
     m_Metadata:
       m_Items: []
+  - m_Id: 754672562876416
+    m_Key: scene_5_item_bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754749771624448
+    m_Key: scene_5_item_cup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754785184133120
+    m_Key: scene_5_item_ebook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754822056259584
+    m_Key: scene_5_item_shampoo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754865932873728
+    m_Key: scene_5_item_books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754905808121856
+    m_Key: scene_5_item_bottle_plastic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754962833879040
+    m_Key: scene_5_item_bottle_reusable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754993842368512
+    m_Key: scene_5_item_lunchbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755385691025408
+    m_Key: scene_5_item_jeans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755415575441408
+    m_Key: scene_5_item_bag_plastic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755445174644736
+    m_Key: scene_5_item_charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755479949619200
+    m_Key: scene_5_item_towels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755513487273984
+    m_Key: scene_5_item_shirts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755553236692992
+    m_Key: scene_5_item_deo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755575290343424
+    m_Key: scene_5_item_passport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755611944366080
+    m_Key: scene_5_item_sunglasses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755639157010432
+    m_Key: scene_5_item_laptop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755657670668288
+    m_Key: scene_5_item_shampoobottles
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

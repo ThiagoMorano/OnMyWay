@@ -74,5 +74,77 @@ MonoBehaviour:
     m_Localized: <3 Mom
     m_Metadata:
       m_Items: []
+  - m_Id: 754672562876416
+    m_Localized: Reusable bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754749771624448
+    m_Localized: Rubber Cup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754785184133120
+    m_Localized: Ebook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754822056259584
+    m_Localized: Shampoo Bar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754865932873728
+    m_Localized: Books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754905808121856
+    m_Localized: Plastic Bottle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754962833879040
+    m_Localized: Reusable Bottle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754993842368512
+    m_Localized: Lunchbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755385691025408
+    m_Localized: Jeans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755415575441408
+    m_Localized: Plastic Bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755445174644736
+    m_Localized: Charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755479949619200
+    m_Localized: Towels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755513487273984
+    m_Localized: T-Shirts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755553236692992
+    m_Localized: Deodorant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755575290343424
+    m_Localized: Passport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755611944366080
+    m_Localized: Sunglasses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755639157010432
+    m_Localized: Laptop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755657670668288
+    m_Localized: Shampoo bottles
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

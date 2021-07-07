@@ -76,5 +76,77 @@ MonoBehaviour:
     m_Localized: <3 Mama
     m_Metadata:
       m_Items: []
+  - m_Id: 754672562876416
+    m_Localized: Jutebeutel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754749771624448
+    m_Localized: Gummi Kaffeebecher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754785184133120
+    m_Localized: E-Reader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754822056259584
+    m_Localized: Shampoo Block
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754865932873728
+    m_Localized: "B\xFCcher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754905808121856
+    m_Localized: Einweg Flasche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754962833879040
+    m_Localized: Mehrweg Flasche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754993842368512
+    m_Localized: Brotdose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755385691025408
+    m_Localized: Jeans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755415575441408
+    m_Localized: "Plastik T\xFCte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755445174644736
+    m_Localized: "Ladeger\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755479949619200
+    m_Localized: "Handt\xFCcher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755513487273984
+    m_Localized: T-Shirts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755553236692992
+    m_Localized: Deodorant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755575290343424
+    m_Localized: Reisepass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755611944366080
+    m_Localized: Sonnenbrille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755639157010432
+    m_Localized: Laptop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755657670668288
+    m_Localized: Shampoo Flaschen
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
