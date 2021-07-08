@@ -9,9 +9,14 @@ public class TimelineController : MonoBehaviour
 {
     public Action onDirectorFinishedCallback;
 
-    [SerializeField]
-    bool _isPaused = false;
+    [SerializeField] bool _isPaused = false;
     PlayableDirector playableDirector;
+
+
+    [SerializeField] bool _greenTipOpen = false;
+    [SerializeField] bool _waitingForTask = false;
+    [SerializeField] bool _nextButtonOpen = false;
+    [SerializeField] bool _settingsOpen = false;
 
     // public List<PlayableDirector> nextScenes;
     // [SerializeField]
@@ -26,14 +31,14 @@ public class TimelineController : MonoBehaviour
         playableDirector.stopped += OnDirectorFinished;
     }
 
-    void OnDisable () {
+    void OnDisable()
+    {
         playableDirector.stopped -= OnDirectorFinished;
     }
 
-    public void OnDirectorFinished(PlayableDirector pb) {
-        // Debug.Log(pb.name + " has stopped");
-
-        if(onDirectorFinishedCallback != null) onDirectorFinishedCallback();
+    public void OnDirectorFinished(PlayableDirector pb)
+    {
+        if (onDirectorFinishedCallback != null) onDirectorFinishedCallback();
 
         playableDirector.stopped -= OnDirectorFinished;
 
@@ -44,23 +49,76 @@ public class TimelineController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isPaused) {
+        if (_isPaused)
+        {
             playableDirector.DeferredEvaluate();
         }
     }
 
-    public void PauseTimeline() {
+    public void PauseTimeline()
+    {
         playableDirector.Pause();
         _isPaused = true;
     }
 
-    public void ResumeTimeline() {
-        playableDirector.Resume();
-        _isPaused = false;
+
+    private void AttemptResume()
+    {
+        if (CanResume())
+        {
+            ResumeTimeline();
+        }
     }
 
+    public void ResumeTimeline()
+    {
+        if (CanResume())
+        {
+            playableDirector.Resume();
+            _isPaused = false;
+        }
+    }
 
-    // public void SetTransitionTo(int index) {
-    //     _transitionTo = index;
-    // }
+    private bool CanResume()
+    {
+        // return !(_greenTipOpen || _settingsOpen);
+        return !(_greenTipOpen || _waitingForTask || _nextButtonOpen || _settingsOpen);
+        // return true;
+    }
+
+    public void SetGreenTipOpen(bool value)
+    {
+        _greenTipOpen = value;
+        if (!_greenTipOpen)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetWaitingForTask(bool value)
+    {
+        _waitingForTask = value;
+        if (!_waitingForTask)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetSettingsOpen(bool value)
+    {
+        _settingsOpen = value;
+        if (!_settingsOpen)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetNextButtonOpen(bool value)
+    {
+        _nextButtonOpen = value;
+        if (!_nextButtonOpen)
+        {
+            AttemptResume();
+        }
+    }
 }

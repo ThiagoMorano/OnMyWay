@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Scene_5_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dd67fc3ad051f584f80045ef80217baa, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 88240304128
+    m_Localized: Monday
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303698937393152
+    m_Localized: What should I bring with me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346119838642176
+    m_Localized: I packed everything I need, including a nice bag that will last
+      me through the whole trip.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347940963495936
+    m_Localized: I packed everything I need, including a rubber coffee cup, a literal
+      life savior.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347989034414080
+    m_Localized: I packed everything I need, including all books that I wanted to
+      read.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348044915126272
+    m_Localized: I packed everything I need, including the best shampoo ever made!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348160292040704
+    m_Localized: I packed everything I need and a whole library.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348198657339392
+    m_Localized: I packed everything I need and lots of water for all my drinking
+      needs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348298188173312
+    m_Localized: And some other stuff.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350340793249792
+    m_Localized: I packed everything I need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354677149937664
+    m_Localized: ...I think that's it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354715414573056
+    m_Localized: Pack light & remeber your reusables - they are super useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354816686043136
+    m_Localized: <3 Mom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754672562876416
+    m_Localized: Reusable bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754749771624448
+    m_Localized: Rubber Cup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754785184133120
+    m_Localized: Ebook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754822056259584
+    m_Localized: Shampoo Bar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754865932873728
+    m_Localized: Books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754905808121856
+    m_Localized: Plastic Bottle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754962833879040
+    m_Localized: Reusable Bottle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754993842368512
+    m_Localized: Lunchbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755385691025408
+    m_Localized: Jeans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755415575441408
+    m_Localized: Plastic Bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755445174644736
+    m_Localized: Charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755479949619200
+    m_Localized: Towels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755513487273984
+    m_Localized: T-Shirts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755553236692992
+    m_Localized: Deodorant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755575290343424
+    m_Localized: Passport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755611944366080
+    m_Localized: Sunglasses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755639157010432
+    m_Localized: Laptop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755657670668288
+    m_Localized: Shampoo bottles
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

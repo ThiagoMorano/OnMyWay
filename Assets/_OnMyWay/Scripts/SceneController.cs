@@ -10,7 +10,7 @@ public class SceneController : MonoBehaviour
     public List<TaskBehaviour> sceneTasks;
     public TimelineController timelineController;
     public Button nextButton;
-    public int nextScene;
+    public string nextScene;
 
     int currentTaskIndex = 0;
 
@@ -21,11 +21,20 @@ public class SceneController : MonoBehaviour
         nextButton.GetComponent<Image>().color = new Color(1, 1, 1, 0);
 
         currentTaskIndex = 0;
-        foreach(var task in sceneTasks) {
-            task.onCompleteCallback += TaskCompleted;
+        foreach (var task in sceneTasks)
+        {
+            if (task != null)
+            {
+                task.onCompleteCallback += TaskCompleted;
+            }
+            else
+            {
+                Debug.LogWarning("Null objects in list of tasks.");
+            }
         }
 
-        nextButton.onClick.AddListener(() => {
+        nextButton.onClick.AddListener(() =>
+        {
             this.OnNextButtonPressed();
         });
 
@@ -37,26 +46,33 @@ public class SceneController : MonoBehaviour
     {
     }
 
-    public void ActivateTask() {
+    public void ActivateTask()
+    {
         sceneTasks[currentTaskIndex].ActivateTask();
+        timelineController.SetWaitingForTask(true);
     }
 
 
-    private void TaskCompleted() {
+    private void TaskCompleted()
+    {
         currentTaskIndex++;
-        timelineController.ResumeTimeline();
+        timelineController.SetWaitingForTask(false);
     }
 
-    public void ActivateNextButton() {
+    public void ActivateNextButton()
+    {
         nextButton.gameObject.SetActive(true);
+        timelineController.SetNextButtonOpen(true);
     }
 
 
-    public void OnNextButtonPressed() {
-        timelineController.ResumeTimeline();
+    public void OnNextButtonPressed()
+    {
+        timelineController.SetNextButtonOpen(false);
     }
 
-    private void OnSceneFinished() {
+    private void OnSceneFinished()
+    {
         SceneManager.LoadScene(nextScene);
     }
 }

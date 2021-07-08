@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,24 @@ using UnityEngine.EventSystems;
 public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
 {
     public List<Transform> slots;
-    [SerializeField]
+    [SerializeField] private bool[] _slotsInUse;
+    [SerializeField] public SuitcaseItem[] itemsStored;
+
     private bool _isHovering;
-    public bool IsHovering { get {return _isHovering; } }
+    public bool IsHovering { get { return _isHovering; } }
+
+    private int _itemCounter;
+    private bool _isComplete;
+    public bool IsComplete { get { return _isComplete; } }
+
+    public Action onAllItemsPlacedCallback;
+
+    void Start()
+    {
+        _slotsInUse = new bool[slots.Count];
+        itemsStored = new SuitcaseItem[slots.Count];
+        _itemCounter = 0;
+    }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -21,17 +37,89 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
     }
 
 
-    public Vector3 GetClosestAvailableSlot(Vector3 pos) {
-        float minDistance = (slots[0].position - pos).sqrMagnitude;
+    public int GetClosestAvailableSlot(Vector3 pos)
+    {
+        float minDistance = float.MaxValue;
         float sqrDistance;
-        int index = 0;
-        for (int i = 1; i < slots.Count; i++) {
-            sqrDistance = (slots[i].position - pos).sqrMagnitude;
-            if(sqrDistance < minDistance) {
-                minDistance = sqrDistance;
-                index = i;
+        int index = -1;
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (IsSlotAvailable(i))
+            {
+                sqrDistance = (slots[i].position - pos).sqrMagnitude;
+                if (sqrDistance < minDistance)
+                {
+                    minDistance = sqrDistance;
+                    index = i;
+                }
             }
         }
+        return index;
+    }
+
+    public bool IsSlotAvailable(int index)
+    {
+        if (index < 0 || index >= _slotsInUse.Length) return false;
+        return (!_slotsInUse[index]);
+    }
+
+
+    public void AddItemTo(SuitcaseItem suitcaseItem, int slotIndex)
+    {
+        if (!IsSlotAvailable(slotIndex))
+        {
+            Debug.LogWarning(String.Format("Slot {0} already in use", slotIndex));
+            return;
+        }
+
+        _slotsInUse[slotIndex] = true;
+        itemsStored[slotIndex] = suitcaseItem;
+        _itemCounter++;
+        if (_itemCounter == slots.Count)
+        {
+            _isComplete = true;
+            if (onAllItemsPlacedCallback != null)
+            {
+                onAllItemsPlacedCallback();
+            }
+        }
+    }
+
+    public void RemoveItemFromSlot(int slotIndex)
+    {
+        _slotsInUse[slotIndex] = false;
+        itemsStored[slotIndex] = null;
+        _itemCounter--;
+        _isComplete = false;
+    }
+
+
+    public void ResetAll()
+    {
+        for (int i = 0; i < itemsStored.Length; i++)
+        {
+            if(_slotsInUse[i]) {
+                itemsStored[i].ResetItem();
+            }
+        }
+    }
+
+
+    public bool HasAvailableSlot()
+    {
+        for (int i = 0; i < _slotsInUse.Length; i++)
+        {
+            if (_slotsInUse[i] == false)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public Vector3 GetPositionOfSlot(int index)
+    {
         return slots[index].position;
     }
 }

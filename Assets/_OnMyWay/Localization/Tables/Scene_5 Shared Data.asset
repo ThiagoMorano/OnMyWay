@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Scene_5 Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Scene_5
+  m_TableCollectionNameGuidString: dd67fc3ad051f584f80045ef80217baa
+  m_Entries:
+  - m_Id: 88240304128
+    m_Key: scene_5_date
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303698937393152
+    m_Key: scene_5_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346119838642176
+    m_Key: scene_5_bag_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347940963495936
+    m_Key: scene_5_cup_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347989034414080
+    m_Key: scene_5_ebook_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348044915126272
+    m_Key: scene_5_shampoo_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348160292040704
+    m_Key: scene_5_books_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348198657339392
+    m_Key: scene_5_bottles_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348298188173312
+    m_Key: scene_5_bad_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350340793249792
+    m_Key: scene_5_fallback_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354677149937664
+    m_Key: scene_5_end
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354715414573056
+    m_Key: scene_5_tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354816686043136
+    m_Key: scene_5_tip_mama
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754672562876416
+    m_Key: scene_5_item_bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754749771624448
+    m_Key: scene_5_item_cup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754785184133120
+    m_Key: scene_5_item_ebook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754822056259584
+    m_Key: scene_5_item_shampoo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754865932873728
+    m_Key: scene_5_item_books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754905808121856
+    m_Key: scene_5_item_bottle_plastic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754962833879040
+    m_Key: scene_5_item_bottle_reusable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754993842368512
+    m_Key: scene_5_item_lunchbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755385691025408
+    m_Key: scene_5_item_jeans
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755415575441408
+    m_Key: scene_5_item_bag_plastic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755445174644736
+    m_Key: scene_5_item_charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755479949619200
+    m_Key: scene_5_item_towels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755513487273984
+    m_Key: scene_5_item_shirts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755553236692992
+    m_Key: scene_5_item_deo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755575290343424
+    m_Key: scene_5_item_passport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755611944366080
+    m_Key: scene_5_item_sunglasses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755639157010432
+    m_Key: scene_5_item_laptop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755657670668288
+    m_Key: scene_5_item_shampoobottles
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1625492555888
