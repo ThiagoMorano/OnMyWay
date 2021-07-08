@@ -18,6 +18,7 @@ public class PackingTask : TaskBehaviour
     private List<GameObject> selectionOfObjects;
 
     public ClickableElement confirmButton;
+    public ClickableElement resetButton;
     public LocalizeStringEvent feedbackText;
     public LocalizeStringEvent badItemFeedback;
 
@@ -30,6 +31,12 @@ public class PackingTask : TaskBehaviour
         _destination.onAllItemsPlacedCallback += RefreshFeedbackTexts;
 
         confirmButton.onPointerUpCallback += OnComplete;
+        resetButton.onPointerUpCallback += ResetAll;
+    }
+
+    private void ResetAll()
+    {
+        _destination.ResetAll();
     }
 
     private void InstantiateSuitcaseItems(List<Transform> slots)
@@ -97,8 +104,10 @@ public class PackingTask : TaskBehaviour
 
     private bool HasBadItemPacked(SuitcaseItem[] itemsStored)
     {
-        for(int i = 0; i < itemsStored.Length; i++) {
-            if(itemsStored[i].cathegory == SuitcaseItem.PackCathegory.BAD) {
+        for (int i = 0; i < itemsStored.Length; i++)
+        {
+            if (itemsStored[i].cathegory == SuitcaseItem.PackCathegory.BAD)
+            {
                 return true;
             }
         }
@@ -112,8 +121,9 @@ public class PackingTask : TaskBehaviour
         if (confirmButton != null)
         {
             bool activeValue = _destination.IsComplete;
-            confirmButton.gameObject.SetActive(activeValue);
             feedbackText.gameObject.SetActive(activeValue);
+            confirmButton.gameObject.SetActive(activeValue);
+            resetButton.gameObject.SetActive(activeValue);
         }
     }
 

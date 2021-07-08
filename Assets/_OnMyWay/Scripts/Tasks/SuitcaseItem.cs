@@ -6,7 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(DraggableItem))]
 public class SuitcaseItem : MonoBehaviour
 {
-    public enum PackCathegory {
+    public enum PackCathegory
+    {
         BAD,
         GOOD,
         NORMAL
@@ -49,9 +50,7 @@ public class SuitcaseItem : MonoBehaviour
             }
             else
             {
-                RemoveFromSuitcase();
-                SetNewDefaultPosition(_initialPosition);
-                ResetToDefaultPosition();
+                ResetItem();
             }
         }
         else
@@ -96,6 +95,13 @@ public class SuitcaseItem : MonoBehaviour
     private void ResetToDefaultPosition()
     {
         draggableItem.ResetToDefaultPosition();
+    }
+
+    public void ResetItem()
+    {
+        RemoveFromSuitcase();
+        SetNewDefaultPosition(_initialPosition);
+        ResetToDefaultPosition();
     }
 
 

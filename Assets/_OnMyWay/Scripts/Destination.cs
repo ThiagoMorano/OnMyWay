@@ -57,7 +57,6 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
         return index;
     }
 
-
     public bool IsSlotAvailable(int index)
     {
         if (index < 0 || index >= _slotsInUse.Length) return false;
@@ -79,7 +78,8 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
         if (_itemCounter == slots.Count)
         {
             _isComplete = true;
-            if(onAllItemsPlacedCallback != null) {
+            if (onAllItemsPlacedCallback != null)
+            {
                 onAllItemsPlacedCallback();
             }
         }
@@ -93,6 +93,16 @@ public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHand
         _isComplete = false;
     }
 
+
+    public void ResetAll()
+    {
+        for (int i = 0; i < itemsStored.Length; i++)
+        {
+            if(_slotsInUse[i]) {
+                itemsStored[i].ResetItem();
+            }
+        }
+    }
 
 
     public bool HasAvailableSlot()
