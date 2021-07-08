@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class GreenTipController : MonoBehaviour
 {
     public ClickableElement greenTipButton;
+    public ClickableElement tipConfirmButton;
     public ClickableElement tipExitButton;
 
     [Header("Fade values")]
@@ -36,14 +37,23 @@ public class GreenTipController : MonoBehaviour
     {
         timelineController = FindObjectOfType<TimelineController>();
 
-        greenTipButton.onPointerUpCallback += () => {
+        greenTipButton.onPointerUpCallback += () =>
+        {
             this.gameObject.SetActive(true);
             this.StartFadeIn();
         };
 
-
-        tipExitButton.onPointerUpCallback += () => {
-            this.StartFadeOut(() => {
+        tipConfirmButton.onPointerUpCallback += () =>
+        {
+            this.StartFadeOut(() =>
+            {
+                timelineController.SetGreenTipOpen(false);
+            });
+        };
+        tipExitButton.onPointerUpCallback += () =>
+        {
+            this.StartFadeOut(() =>
+            {
                 timelineController.SetGreenTipOpen(false);
             });
         };
@@ -57,6 +67,11 @@ public class GreenTipController : MonoBehaviour
         //         Debug.Log("Finished fading out");
         //     });
         // });
+    }
+
+    private void DisableButtons() {
+        tipConfirmButton.enabled = false;
+        tipExitButton.enabled = false;
     }
 
 

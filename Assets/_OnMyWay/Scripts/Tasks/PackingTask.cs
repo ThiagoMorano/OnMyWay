@@ -5,23 +5,6 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 
-
-public static class IListExtensions {
-    /// <summary>
-    /// Shuffles the element order of the specified list.
-    /// </summary>
-    public static void Shuffle<T>(this IList<T> ts) {
-        var count = ts.Count;
-        var last = count - 1;
-        for (var i = 0; i < last; ++i) {
-            var r = UnityEngine.Random.Range(i, count);
-            var tmp = ts[i];
-            ts[i] = ts[r];
-            ts[r] = tmp;
-        }
-    }
-}
-
 public class PackingTask : TaskBehaviour
 {
     [SerializeField] List<GameObject> goodItems;
@@ -47,13 +30,23 @@ public class PackingTask : TaskBehaviour
 
         _destination.onAllItemsPlacedCallback += RefreshFeedbackTexts;
 
-        confirmButton.onPointerUpCallback += OnComplete;
+        confirmButton.onPointerUpCallback += () =>
+        {
+            OnComplete();
+            DisableButtons();
+        };
         resetButton.onPointerUpCallback += ResetAll;
     }
 
     private void ResetAll()
     {
         _destination.ResetAll();
+    }
+
+    private void DisableButtons()
+    {
+        confirmButton.enabled = false;
+        resetButton.enabled = false;
     }
 
     private void InstantiateSuitcaseItems(List<Transform> slots)
@@ -149,8 +142,24 @@ public class PackingTask : TaskBehaviour
 
 
 
-    public override void ActivateTask()
-    {
+    public override void ActivateTask() {; }
+}
 
+public static class IListExtensions
+{
+    /// <summary>
+    /// Shuffles the element order of the specified list.
+    /// </summary>
+    public static void Shuffle<T>(this IList<T> ts)
+    {
+        var count = ts.Count;
+        var last = count - 1;
+        for (var i = 0; i < last; ++i)
+        {
+            var r = UnityEngine.Random.Range(i, count);
+            var tmp = ts[i];
+            ts[i] = ts[r];
+            ts[r] = tmp;
+        }
     }
 }
