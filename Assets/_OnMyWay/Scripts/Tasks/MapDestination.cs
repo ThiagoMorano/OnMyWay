@@ -17,6 +17,11 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     SelectDestination _destinationTask;
     ClickableElement clickable;
 
+
+    public GameObject mapSelectionAnimation;
+    Animator animator;
+
+
     public Action onSelectCallback;
 
     // Start is called before the first frame update
@@ -30,13 +35,28 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
         clickable = GetComponent<ClickableElement>();
         clickable.onPointerUpCallback += Select;
+
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
+        mapSelectionAnimation.SetActive(false);
     }
 
     private void Select() {
         _wasSelected = true;
         _destinationTask.SetSelected(this);
+        PlaySelectionAnimation();
+    }
+
+    private void PlaySelectionAnimation()
+    {
+        mapSelectionAnimation.SetActive(true);
+        animator.enabled = true;
+    }
+
+    public void OnSelectionAnimationFinished() {
         onSelectCallback();
     }
+
 
     public void SetTaskItemActive(bool value) {
         _coll.enabled = value;
