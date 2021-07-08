@@ -5,6 +5,23 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 
+
+public static class IListExtensions {
+    /// <summary>
+    /// Shuffles the element order of the specified list.
+    /// </summary>
+    public static void Shuffle<T>(this IList<T> ts) {
+        var count = ts.Count;
+        var last = count - 1;
+        for (var i = 0; i < last; ++i) {
+            var r = UnityEngine.Random.Range(i, count);
+            var tmp = ts[i];
+            ts[i] = ts[r];
+            ts[r] = tmp;
+        }
+    }
+}
+
 public class PackingTask : TaskBehaviour
 {
     [SerializeField] List<GameObject> goodItems;
@@ -60,6 +77,8 @@ public class PackingTask : TaskBehaviour
         InstantiateItems(numberOfNormals, normalItems, usedNormals, selectionOfObjects);
 
         // shuffle selectionOfObjects
+        selectionOfObjects.Shuffle();
+
         for (int i = 0; i < slots.Count; i++)
         {
             // selectionOfObjects[i].transform.position = slots[i].position;
@@ -68,6 +87,7 @@ public class PackingTask : TaskBehaviour
             selectionOfObjects[i].GetComponent<SuitcaseItem>().SetDestinationReference(_destination);
         }
     }
+
 
     private void InstantiateItems(int numberOfItems, List<GameObject> listOfItems, List<int> usedIndexes, List<GameObject> selectionOfObjects)
     {
