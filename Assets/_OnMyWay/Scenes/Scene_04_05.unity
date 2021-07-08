@@ -2613,6 +2613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPaused: 0
+  _greenTipOpen: 0
+  _waitingForTask: 0
+  _nextButtonOpen: 0
+  _settingsOpen: 0
 --- !u!1 &1362579117
 GameObject:
   m_ObjectHideFlags: 0

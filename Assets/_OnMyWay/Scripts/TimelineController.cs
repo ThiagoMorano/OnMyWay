@@ -13,11 +13,10 @@ public class TimelineController : MonoBehaviour
     PlayableDirector playableDirector;
 
 
-    bool _greenTipOpen = false;
-
-    public void SetGreenTipOpen(bool value) {
-        _greenTipOpen = value;
-    }
+    [SerializeField] bool _greenTipOpen = false;
+    [SerializeField] bool _waitingForTask = false;
+    [SerializeField] bool _nextButtonOpen = false;
+    [SerializeField] bool _settingsOpen = false;
 
     // public List<PlayableDirector> nextScenes;
     // [SerializeField]
@@ -62,6 +61,15 @@ public class TimelineController : MonoBehaviour
         _isPaused = true;
     }
 
+
+    private void AttemptResume()
+    {
+        if (CanResume())
+        {
+            ResumeTimeline();
+        }
+    }
+
     public void ResumeTimeline()
     {
         if (CanResume())
@@ -74,7 +82,43 @@ public class TimelineController : MonoBehaviour
     private bool CanResume()
     {
         // return !(_greenTipOpen || _settingsOpen);
-        return !_greenTipOpen;
+        return !(_greenTipOpen || _waitingForTask || _nextButtonOpen || _settingsOpen);
         // return true;
+    }
+
+    public void SetGreenTipOpen(bool value)
+    {
+        _greenTipOpen = value;
+        if (!_greenTipOpen)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetWaitingForTask(bool value)
+    {
+        _waitingForTask = value;
+        if (!_waitingForTask)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetSettingsOpen(bool value)
+    {
+        _settingsOpen = value;
+        if (!_settingsOpen)
+        {
+            AttemptResume();
+        }
+    }
+
+    public void SetNextButtonOpen(bool value)
+    {
+        _nextButtonOpen = value;
+        if (!_nextButtonOpen)
+        {
+            AttemptResume();
+        }
     }
 }
