@@ -25,9 +25,12 @@ public class GreenTipController : MonoBehaviour
     public Vector3[] positions = { new Vector3(0f, -10f, 0f), new Vector3(0f, 0f, 0f) };
 
 
-    [Header("Callbacks")]
-    public UnityEvent onFadeInResponse;
-    public UnityEvent onFadeOutResponse;
+    [Header("FadeIn Callbacks")]
+    public UnityEvent onStartFadeInResponse;
+    public UnityEvent onEndFadeInResponse;
+    [Header("FadeOut Callbacks")]
+    public UnityEvent onStartFadeOutResponse;
+    public UnityEvent onEndFadeOutResponse;
 
 
     TimelineController timelineController;
@@ -80,6 +83,8 @@ public class GreenTipController : MonoBehaviour
         timelineController.SetGreenTipOpen(true);
 
         _elapsedTime = 0;
+
+        onStartFadeInResponse?.Invoke();
         StartCoroutine(FadeIn(callback));
     }
 
@@ -91,7 +96,7 @@ public class GreenTipController : MonoBehaviour
         {
             callback();
         }
-        onFadeInResponse?.Invoke();
+        onEndFadeInResponse?.Invoke();
     }
 
     private bool UpdateFadeIn(float deltaTime)
@@ -115,6 +120,8 @@ public class GreenTipController : MonoBehaviour
     public void StartFadeOut(Action callback = null)
     {
         _elapsedTime = 0;
+
+        onStartFadeOutResponse?.Invoke();
         StartCoroutine(FadeOut(callback));
     }
 
@@ -126,7 +133,7 @@ public class GreenTipController : MonoBehaviour
         {
             callback();
         }
-        onFadeOutResponse?.Invoke();
+        onEndFadeOutResponse?.Invoke();
     }
 
     private bool UpdateFadeOut(float deltaTime)
