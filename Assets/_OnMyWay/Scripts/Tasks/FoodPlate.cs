@@ -10,8 +10,10 @@ public class FoodPlate : TaskBehaviour
     public List<Sprite> spriteSequence;
     private int _currentState;
 
-    ClickableElement clickable;
     SpriteRenderer spriteRenderer;
+    ClickableElement clickable;
+    ChangeScaleOnHover scaleFeedback;
+    Collider2D coll;
 
     // public UnityEvent completeResponse;
 
@@ -24,6 +26,9 @@ public class FoodPlate : TaskBehaviour
 
         clickable = GetComponent<ClickableElement>();
         clickable.onPointerUpCallback += Interact;
+
+        coll = GetComponent<Collider2D>();
+        scaleFeedback = GetComponent<ChangeScaleOnHover>();
     }
 
     void SetState(int index) {
@@ -52,6 +57,8 @@ public class FoodPlate : TaskBehaviour
 
     public override void ActivateTask()
     {
+        coll.enabled = true;
+        scaleFeedback.enabled = true;
     }
 
     // void OnComplete() {
