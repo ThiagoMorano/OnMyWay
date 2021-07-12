@@ -10,25 +10,22 @@ public class FoodPlate : TaskBehaviour
     public List<Sprite> spriteSequence;
     private int _currentState;
 
-    SpriteRenderer spriteRenderer;
-    ClickableElement clickable;
-    ChangeScaleOnHover scaleFeedback;
-    Collider2D coll;
-
-    // public UnityEvent completeResponse;
-
+    SpriteRenderer _spriteRenderer;
+    ClickableElement _clickable;
+    ChangeScaleOnHover _scaleFeedback;
+    Collider2D _coll;
 
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         this.SetState(0);
 
-        clickable = GetComponent<ClickableElement>();
-        clickable.onPointerUpCallback += Interact;
+        _clickable = GetComponent<ClickableElement>();
+        _clickable.onPointerUpCallback += Interact;
 
-        coll = GetComponent<Collider2D>();
-        scaleFeedback = GetComponent<ChangeScaleOnHover>();
+        _coll = GetComponent<Collider2D>();
+        _scaleFeedback = GetComponent<ChangeScaleOnHover>();
     }
 
     void SetState(int index) {
@@ -38,14 +35,12 @@ public class FoodPlate : TaskBehaviour
 
     void SetSprite(int index) {
         if(index < spriteSequence.Count && index >= 0) {
-            spriteRenderer.sprite = spriteSequence[index];
+            _spriteRenderer.sprite = spriteSequence[index];
         }
     }
 
 
     public void Interact() {
-        Debug.Log("interact");
-
         if(_currentState < spriteSequence.Count) {
             SetState(_currentState + 1);
         }
@@ -57,12 +52,7 @@ public class FoodPlate : TaskBehaviour
 
     public override void ActivateTask()
     {
-        coll.enabled = true;
-        scaleFeedback.enabled = true;
+        _coll.enabled = true;
+        _scaleFeedback.enabled = true;
     }
-
-    // void OnComplete() {
-    //     Debug.Log("Task completed");
-    //     completeResponse?.Invoke();
-    // }
 }

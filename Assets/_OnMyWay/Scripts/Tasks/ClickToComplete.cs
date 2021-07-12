@@ -5,27 +5,21 @@ using UnityEngine;
 [RequireComponent(typeof(ClickableElement))]
 public class ClickToComplete : TaskBehaviour
 {
-    Collider2D coll;
-    ClickableElement clickable;
+    Collider2D _coll;
+    ClickableElement _clickable;
 
     // Start is called before the first frame update
     void Start()
     {
-        coll = GetComponent<Collider2D>();
-        coll.enabled = false;
+        _coll = GetComponent<Collider2D>();
+        _coll.enabled = false;
 
-        clickable = GetComponent<ClickableElement>();
-        clickable.onPointerUpCallback += OnComplete;
+        _clickable = GetComponent<ClickableElement>();
+        _clickable.onPointerUpCallback += OnComplete;
     }
 
     public override void ActivateTask()
     {
-        coll.enabled = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _coll.enabled = true;
     }
 }

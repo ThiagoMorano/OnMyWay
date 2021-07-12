@@ -10,13 +10,13 @@ public class MultipleTasks : TaskBehaviour
     [Space(40)]
     public List<TaskBehaviour> subtasks;
 
-    private Dictionary<TaskBehaviour, bool> completionList;
+    private Dictionary<TaskBehaviour, bool> _completionList;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        completionList = new Dictionary<TaskBehaviour, bool>();
+        _completionList = new Dictionary<TaskBehaviour, bool>();
 
         foreach (var task in subtasks)
         {
@@ -24,16 +24,16 @@ public class MultipleTasks : TaskBehaviour
             {
                 this.CompleteSubtask(task);
             };
-            completionList.Add(task, false);
+            _completionList.Add(task, false);
         }
     }
 
     private void CompleteSubtask(TaskBehaviour completedTask)
     {
         Debug.Log("Completing subtask " + completedTask);
-        if (!completionList.ContainsKey(completedTask)) return;
+        if (!_completionList.ContainsKey(completedTask)) return;
 
-        completionList[completedTask] = true;
+        _completionList[completedTask] = true;
         if (GetOverallCompletion())
         {
             this.OnComplete();
@@ -42,7 +42,7 @@ public class MultipleTasks : TaskBehaviour
 
     private bool GetOverallCompletion()
     {
-        foreach (var state in completionList.Values)
+        foreach (var state in _completionList.Values)
         {
             if (state == false)
             {

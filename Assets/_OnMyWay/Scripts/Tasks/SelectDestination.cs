@@ -13,14 +13,15 @@ public class SelectDestination : TaskBehaviour
     public List<MapDestination> destinations;
     public LocalizeStringEvent noteAboutDestination;
 
-    MapDestination selectedDestination;
+    MapDestination _selectedDestination;
 
 
     // Start is called before the first frame update
     void Start()
     {
         destinations = new List<MapDestination>(GetComponentsInChildren<MapDestination>());
-        foreach(var destination in destinations) {
+        foreach (var destination in destinations)
+        {
             destination.SetTaskReference(this);
             destination.onSelectCallback += this.OnComplete;
         }
@@ -30,38 +31,45 @@ public class SelectDestination : TaskBehaviour
 
     public override void ActivateTask()
     {
-        foreach(var destination in destinations) {
+        foreach (var destination in destinations)
+        {
             destination.SetTaskItemActive(this);
         }
     }
 
-    private void DisableTask() {
-        foreach(var destination in destinations) {
-            destination.SetTaskItemActive(false);
-        }
-    }
-
-    public void SetPinActive(bool value) {
+    public void SetPinActive(bool value)
+    {
         destinationPin.SetActive(value);
     }
 
-    protected override void OnComplete() {
+    protected override void OnComplete()
+    {
         base.OnComplete();
         DisableTask();
         RefereshDestinationNoteText();
     }
 
+    private void DisableTask()
+    {
+        foreach (var destination in destinations)
+        {
+            destination.SetTaskItemActive(false);
+        }
+    }
+
+
     private void RefereshDestinationNoteText()
     {
         noteAboutDestination.StringReference.SetReference(
-            selectedDestination.noteLocalizationKey.TableReference,
-            selectedDestination.noteLocalizationKey.TableEntryReference
+            _selectedDestination.noteLocalizationKey.TableReference,
+            _selectedDestination.noteLocalizationKey.TableEntryReference
         );
         noteAboutDestination.RefreshString();
     }
 
-    public void SetSelected(MapDestination hoveredStateDestination) {
-        selectedDestination = hoveredStateDestination;
+    public void SetSelected(MapDestination hoveredStateDestination)
+    {
+        _selectedDestination = hoveredStateDestination;
         DisableTask();
 
         // TODO: store the destination string here

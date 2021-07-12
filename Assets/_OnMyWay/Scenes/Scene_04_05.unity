@@ -1380,7 +1380,7 @@ MonoBehaviour:
   - {fileID: 1770958681}
   timelineController: {fileID: 1335066784}
   nextButton: {fileID: 558164128}
-  nextScene: Scene_01
+  nextScene: Scene_06_07
 --- !u!114 &695281111
 MonoBehaviour:
   m_ObjectHideFlags: 0
