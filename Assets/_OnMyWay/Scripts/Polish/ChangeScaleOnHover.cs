@@ -28,7 +28,7 @@ public class ChangeScaleOnHover : MonoBehaviour, IPointerExitHandler, IPointerEn
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        defaultScale = transform.localScale;
+        // defaultScale = transform.localScale;
         transform.localScale = defaultScale * scaleModifier;
 
         if(associatedTransforms.Count > 0) {
@@ -46,7 +46,12 @@ public class ChangeScaleOnHover : MonoBehaviour, IPointerExitHandler, IPointerEn
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        transform.localScale = defaultScale;
+        ResetToDefaultScale();
+    }
+
+    private void ResetToDefaultScale()
+    {
+       transform.localScale = defaultScale;
 
         if(associatedTransforms.Count > 0) {
             ResetAssociatedTransforms();

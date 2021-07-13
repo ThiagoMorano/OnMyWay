@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,32 +6,50 @@ using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
 
-public interface IMyInterface {
-}
-
 public class LocaleSelector : MonoBehaviour
 {
-    public string localeCode = "en";
     public Locale locale;
-    public bool hoveredState = false;
-
-    [SerializeField]
-    public IMyInterface interfaceTest;
+    public GameObject selectedVisuals;
+    public bool selected = false;
 
     IEnumerator Start()
     {
-        hoveredState = false;
+        Debug.Log(gameObject.name + " Start()");
+        selected = false;
+        selectedVisuals.SetActive(false);
         // Wait for the localization system to initialize
         yield return LocalizationSettings.InitializationOperation;
+        Debug.Log("on finished loading loca");
 
-        Debug.Log(LocalizationSettings.SelectedLocale.Identifier.Code);
+        if (LocalizationSettings.SelectedLocale.Identifier.Code == locale.Identifier.Code)
+        {
+            selected = true;
+            selectedVisuals.SetActive(true);
+        }
 
-        if(LocalizationSettings.SelectedLocale.Identifier.Code == locale.Identifier.Code) {
-            hoveredState = true;
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+
+    private void OnLocaleChanged(Locale newLocale)
+    {
+        if (newLocale.Identifier.Code == locale.Identifier.Code)
+        {
+            selected = true;
+            selectedVisuals.SetActive(true);
+        }
+        else
+        {
+            selected = false;
+            selectedVisuals.SetActive(false);
         }
     }
 
-    public void SelectLocale(Locale locale) {
+    public void SelectLocale(Locale locale)
+    {
         LocalizationSettings.SelectedLocale = locale;
     }
+
+    // void Update() {
+    //     selectedVisuals.SetActive(selected);
+    // }
 }

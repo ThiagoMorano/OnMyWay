@@ -23,7 +23,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4616872275968
-    m_Localized: Languages
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9825237479206912
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9825491494645760
+    m_Localized: SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9825523820146688
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9825689964916736
+    m_Localized: Game paused!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9826358528585728
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9826406167490560
+    m_Localized: Back to settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9916018378420224
+    m_Localized: The Team!
     m_Metadata:
       m_Items: []
   references:
