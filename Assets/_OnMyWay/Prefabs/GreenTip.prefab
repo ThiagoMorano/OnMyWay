@@ -141,6 +141,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1072770293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +259,9 @@ GameObject:
   m_Component:
   - component: {fileID: 879857274664986893}
   - component: {fileID: 879857274664986892}
+  - component: {fileID: 1651973568}
+  - component: {fileID: 1651973566}
+  - component: {fileID: 1651973567}
   m_Layer: 0
   m_Name: Pagemarker_GreenTip
   m_TagString: Untagged
@@ -308,7 +323,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 110
+  m_SortingOrder: 195
   m_Sprite: {fileID: -6361092246675098733, guid: 2e4b6d6cbcfc06c41b940e8d602e1f1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -320,6 +335,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1651973568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879857274664986894}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.2583334, y: 1.0833334}
+    newSize: {x: 2.6, y: 1.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2583334, y: 1.0833334}
+  m_EdgeRadius: 0
+--- !u!114 &1651973566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879857274664986894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec2bf898f8e6b2468c9b8d2c0d9e6e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleModifier: 1.05
+  associatedTransforms: []
+--- !u!114 &1651973567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879857274664986894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042d586f825e779419a3c37238dee5aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerDownResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  pointerUpResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 550916766137540029}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &879857274782140210
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,24 +725,18 @@ MonoBehaviour:
   positions:
   - {x: -0.4, y: -10, z: 0}
   - {x: -0.4, y: 0, z: 0}
-  onFadeInResponse:
+  onStartFadeInResponse:
     m_PersistentCalls:
       m_Calls: []
-  onFadeOutResponse:
+  onEndFadeInResponse:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TimelineController, Assembly-CSharp
-        m_MethodName: SetGreenTipOpen
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onStartFadeOutResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  onEndFadeOutResponse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &879857275753206076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1106,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &879857275881653125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1228,7 @@ GameObject:
   - component: {fileID: 879857276088295206}
   - component: {fileID: 879857276088295207}
   - component: {fileID: 879857276088295204}
+  - component: {fileID: 1921387362}
   m_Layer: 0
   m_Name: GreenTipButton
   m_TagString: Untagged
@@ -1226,7 +1318,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.31, y: 1.34}
+    oldSize: {x: 1.0916667, y: 1.1166667}
     newSize: {x: 1.26, y: 1.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1289,6 +1381,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &879857276088295207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,6 +1426,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1921387362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879857276088295202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb64536361b3b7419497362e805359b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToSwitch: 0.5
+  from: {x: 0, y: 0, z: 0}
+  to: {x: 0, y: 0, z: -35}
+  stateFrom: 0
 --- !u!1001 &879857276447630237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1329,6 +1449,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879857275508874024}
     m_Modifications:
+    - target: {fileID: 833410463916850721, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1833636678413528443, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
       propertyPath: m_Name
       value: Journal
@@ -1400,3 +1524,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1833636678413528445, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
   m_PrefabInstance: {fileID: 879857276447630237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &550916766137540029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 833410463916850720, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
+  m_PrefabInstance: {fileID: 879857276447630237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0b3a31867cdfb46a7d0c238c23d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
