@@ -2007,93 +2007,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1290167810015053238, guid: 54df88389f0333345b604b085c84b701, type: 3}
   m_PrefabInstance: {fileID: 740614693964342170}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &978552245 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1833636678589167303, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
-  m_PrefabInstance: {fileID: 1833636679982611840}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &978552247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978552245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042d586f825e779419a3c37238dee5aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointerDownResponse:
-    m_PersistentCalls:
-      m_Calls: []
-  pointerUpResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: ed364547d22246942a30ef1f77898613, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1828315589}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: PauseGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &978552248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978552245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ec2bf898f8e6b2468c9b8d2c0d9e6e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleModifier: 1.05
-  associatedTransforms: []
---- !u!61 &978552249
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978552245}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.34, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.9833333, y: 1.05}
-    newSize: {x: 2.38, y: 1.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4, y: 1.05}
-  m_EdgeRadius: 0
 --- !u!1 &1016232553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,10 +5222,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.028
       objectReference: {fileID: 0}
-    - target: {fileID: 1833636678990046349, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 58731438558232064, guid: 2e4b6d6cbcfc06c41b940e8d602e1f1c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
 --- !u!1001 &5878709769732029992

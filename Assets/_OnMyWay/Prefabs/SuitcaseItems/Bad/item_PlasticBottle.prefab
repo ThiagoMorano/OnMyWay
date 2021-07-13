@@ -78,7 +78,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 165
+  m_SortingOrder: 195
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &158529314
 MonoBehaviour:
@@ -291,7 +291,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 160
+  m_SortingOrder: 194
   m_Sprite: {fileID: 2476722669603290560, guid: 2e4b6d6cbcfc06c41b940e8d602e1f1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -579,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e892d0ed24584aa49b9a07bfa1b308a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  callExitOnColliderDisabled: 1
   pointerEnterResponse:
     m_PersistentCalls:
       m_Calls:

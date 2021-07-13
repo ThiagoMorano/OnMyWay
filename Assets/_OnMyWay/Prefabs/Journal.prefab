@@ -94,6 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1833636678589167304}
   - component: {fileID: 1833636678589167305}
+  - component: {fileID: 6855694548757090646}
+  - component: {fileID: 3329627825215066431}
+  - component: {fileID: 6247110490401056470}
   m_Layer: 0
   m_Name: Pagemarker_Settings
   m_TagString: Untagged
@@ -172,6 +175,88 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!61 &6855694548757090646
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833636678589167303}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.34, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9833333, y: 1.05}
+    newSize: {x: 2.38, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 1.05}
+  m_EdgeRadius: 0
+--- !u!114 &3329627825215066431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833636678589167303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042d586f825e779419a3c37238dee5aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerDownResponse:
+    m_PersistentCalls:
+      m_Calls: []
+  pointerUpResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ed364547d22246942a30ef1f77898613, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 833410463916850720}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6247110490401056470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833636678589167303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec2bf898f8e6b2468c9b8d2c0d9e6e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleModifier: 1.05
+  associatedTransforms: []
 --- !u!1 &1833636678990046347
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +333,7 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7692731664080177088, guid: 2e4b6d6cbcfc06c41b940e8d602e1f1c, type: 3}
+  m_Sprite: {fileID: 58731438558232064, guid: 2e4b6d6cbcfc06c41b940e8d602e1f1c, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
@@ -324,3 +409,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1211503892046573521, guid: b10a4baa06241f749b3d922b549f6cc3, type: 3}
   m_PrefabInstance: {fileID: 1963848955157221872}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &833410463916850720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211503892046573520, guid: b10a4baa06241f749b3d922b549f6cc3, type: 3}
+  m_PrefabInstance: {fileID: 1963848955157221872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0b3a31867cdfb46a7d0c238c23d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

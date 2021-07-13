@@ -14,12 +14,10 @@ public class LocaleSelector : MonoBehaviour
 
     IEnumerator Start()
     {
-        Debug.Log(gameObject.name + " Start()");
         selected = false;
         selectedVisuals.SetActive(false);
         // Wait for the localization system to initialize
         yield return LocalizationSettings.InitializationOperation;
-        Debug.Log("on finished loading loca");
 
         if (LocalizationSettings.SelectedLocale.Identifier.Code == locale.Identifier.Code)
         {
