@@ -1,12 +1,78 @@
 fileFormatVersion: 2
 guid: 5c9b6a68eeaad1644a7ccf84b170cd8e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8397624602241686438
+    second: Sprites_Scene10_Clouds_0
+  - first:
+      213: -1372620543546978153
+    second: Sprites_Scene10_Clouds_2
+  - first:
+      213: -2809382253049319242
+    second: Sprites_Scene10_Clouds_4
+  - first:
+      213: 7466135911731298063
+    second: Sprites_Scene10_Clouds_5
+  - first:
+      213: -5197700380239657233
+    second: Sprites_Scene10_Clouds_6
+  - first:
+      213: -7854113621565915216
+    second: Sprites_Scene10_Clouds_7
+  - first:
+      213: 331638047625011572
+    second: Sprites_Scene10_Clouds_9
+  - first:
+      213: -5277451807858321883
+    second: Sprites_Scene10_Clouds_10
+  - first:
+      213: -7374004693322483993
+    second: Sprites_Scene10_Clouds_11
+  - first:
+      213: 2899998532707636330
+    second: Sprites_Scene10_Clouds_12
+  - first:
+      213: -1169378291028366750
+    second: Sprites_Scene10_Clouds_13
+  - first:
+      213: 7804642327529179856
+    second: Sprites_Scene10_Clouds_14
+  - first:
+      213: 1132875995927001262
+    second: Sprites_Scene10_Clouds_16
+  - first:
+      213: -5237025667508985126
+    second: Sprites_Scene10_Clouds_17
+  - first:
+      213: -2437217444860073707
+    second: Sprites_Scene10_Clouds_18
+  - first:
+      213: 5730945728008762934
+    second: Sprites_Scene10_Clouds_19
+  - first:
+      213: -3717168614858670100
+    second: Sprites_Scene10_Clouds_20
+  - first:
+      213: 2040269126002266951
+    second: Sprites_Scene10_Clouds_22
+  - first:
+      213: 5166778217827476803
+    second: Sprites_Scene10_Clouds_23
+  - first:
+      213: -2685502480127253038
+    second: Sprites_Scene10_Clouds_24
+  - first:
+      213: -5011607213142570900
+    second: Sprites_Scene10_Clouds_25
+  - first:
+      213: -804363869175060710
+    second: Sprites_Scene10_Clouds_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,24 +101,24 @@ TextureImporter:
     filterMode: 1
     aniso: 2
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 108
+  spriteBorder: {x: 0, y: 0, z: 2177, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -123,13 +189,67 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sprites_Scene10_Clouds_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 502
+        height: 562
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab52bd451b5a8470800000000000000
+      internalID: 8397624602241686438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Scene10_Clouds_1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 75
+        width: 2049
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1769ab925356d4f0800000000000000
+      internalID: -804363869175060710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

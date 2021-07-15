@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Scene_11_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 0c5ea7131ff897d47bc4102b472060c5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 4819791872
+    m_Localized: Sind wir schon da?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106393251840
+    m_Localized: Ich frage mich ob die Leute klatschen werden, wenn wir landen...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 145026985984
+    m_Localized: Wie lange ist der Flug nochmnal? X Stunden? Das geht ja noch...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 195669012480
+    m_Localized: "Hmm... Ich k\xF6nnte was lesen..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 239189110784
+    m_Localized: Ich bekomme echt hunger...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292016369664
+    m_Localized: WIR SIND DA!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
