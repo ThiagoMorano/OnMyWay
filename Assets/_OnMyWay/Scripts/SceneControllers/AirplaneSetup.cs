@@ -18,8 +18,15 @@ public class AirplaneSetup : MonoBehaviour
 
     public AirplaneOptions defaultOption;
 
-    // Start is called before the first frame update
-    void Start()
+
+    public SpriteRenderer airplaneSticker;
+    public Sprite budgetAirplaneSprite;
+    public Sprite premiumAirplaneSprite;
+
+    [HideInInspector] public string flightTime = "3";
+
+
+    void Awake()
     {
         int planeChoice = PlayerPrefs.GetInt("planeChoice", (int)defaultOption);
         SetupScene(planeChoice);
@@ -33,16 +40,25 @@ public class AirplaneSetup : MonoBehaviour
                 budgetDirect.SetActive(true);
                 premiumDirect.SetActive(false);
                 budgetConnection.SetActive(false);
+
+                airplaneSticker.sprite = budgetAirplaneSprite;
+                flightTime = "3";
                 break;
             case (int)AirplaneOptions.premiumDirect:
                 budgetDirect.SetActive(false);
                 premiumDirect.SetActive(true);
                 budgetConnection.SetActive(false);
+
+                airplaneSticker.sprite = budgetAirplaneSprite;
+                flightTime = "3";
                 break;
             case (int)AirplaneOptions.budgetConnection:
                 budgetDirect.SetActive(false);
                 premiumDirect.SetActive(false);
                 budgetConnection.SetActive(true);
+
+                airplaneSticker.sprite = budgetAirplaneSprite;
+                flightTime = "9";
                 break;
         }
     }

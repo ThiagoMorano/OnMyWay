@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 0c5ea7131ff897d47bc4102b472060c5, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 4819791872
     m_Localized: 'Are we there yet? '
@@ -27,9 +28,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 145026985984
-    m_Localized: How logn it this flight again? X hours? Okay, that's not so bad...
+    m_Localized: How long is this flight again? {flightTime} hours? Okay, that's
+      not so bad...
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 0
   - m_Id: 195669012480
     m_Localized: Hmm... I could read a book...
     m_Metadata:
@@ -44,3 +47,7 @@ MonoBehaviour:
       m_Items: []
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 003048c421000000

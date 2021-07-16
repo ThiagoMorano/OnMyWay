@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(ClickableElement))]
 public class ClickToComplete : TaskBehaviour
 {
+    public UnityEvent activateTaskResponse;
+
     Collider2D _coll;
     ClickableElement _clickable;
 
@@ -21,5 +24,7 @@ public class ClickToComplete : TaskBehaviour
     public override void ActivateTask()
     {
         _coll.enabled = true;
+
+        activateTaskResponse?.Invoke();
     }
 }
