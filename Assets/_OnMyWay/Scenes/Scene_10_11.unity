@@ -2617,7 +2617,7 @@ MonoBehaviour:
   completeResponse:
     m_PersistentCalls:
       m_Calls: []
-  timeUntilCompletion: 5
+  timeUntilCompletion: 10
   _elapsedTime: 0
 --- !u!114 &728778826
 MonoBehaviour:

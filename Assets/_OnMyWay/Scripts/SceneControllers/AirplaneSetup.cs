@@ -49,7 +49,7 @@ public class AirplaneSetup : MonoBehaviour
                 premiumDirect.SetActive(true);
                 budgetConnection.SetActive(false);
 
-                airplaneSticker.sprite = budgetAirplaneSprite;
+                airplaneSticker.sprite = premiumAirplaneSprite;
                 flightTime = "3";
                 break;
             case (int)AirplaneOptions.budgetConnection:

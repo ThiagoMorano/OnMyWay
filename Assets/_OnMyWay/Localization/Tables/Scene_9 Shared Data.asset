@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Scene_9 Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Scene_9
+  m_TableCollectionNameGuidString: a7f6b4370567ddc4f8c983a732516b0d
+  m_Entries:
+  - m_Id: 49262637056
+    m_Key: scene_9_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139620528128
+    m_Key: scene_9_which_flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180934422528
+    m_Key: scene_9_tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709014073344
+    m_Key: scene_9_passenger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750227304448
+    m_Key: scene_9_depature
+    m_Metadata:
+      m_Items: []
+  - m_Id: 793944535040
+    m_Key: scene_9_arrival
+    m_Metadata:
+      m_Items: []
+  - m_Id: 826475556864
+    m_Key: scene_9_gate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862676594688
+    m_Key: scene_9_seat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 901851394048
+    m_Key: scene_9_duration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 944436162560
+    m_Key: scene_9_price
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971090964480
+    m_Key: scene_9_date
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000845357056
+    m_Key: scene_9_from_to
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1221356695552
+    m_Key: scene_9_connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20478236831744
+    m_Key: scene_9_from
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20903153381376
+    m_Key: scene_9_to
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1626450743985

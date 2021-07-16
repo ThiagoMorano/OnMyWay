@@ -94,7 +94,7 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceColor: {r: 0.84687346, g: 0.637597, b: 0.082282715, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -160,11 +160,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: BalsamiqSans-Regular SDF
+  m_Name: BalsamiqSans-Regular Yellow
   m_EditorClassIdentifier: 
-  hashCode: -697554335
+  hashCode: 1832361300
   material: {fileID: -4505927981214852550}
-  materialHashCode: 822809377
+  materialHashCode: -710506508
   m_Version: 1.1.0
   m_SourceFontFileGUID: a798067bd4c95c747965e39841f2ff2c
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: a798067bd4c95c747965e39841f2ff2c, type: 3}

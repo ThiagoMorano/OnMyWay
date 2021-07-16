@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Scene_9_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: a7f6b4370567ddc4f8c983a732516b0d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 49262637056
+    m_Localized: Am Flughafen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139620528128
+    m_Localized: Welchen Flug soll ich nehmen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180934422528
+    m_Localized: "Gut f\xFCr den Planeten und deinen Geldbeutel:\n- Billig Fluglinie\n-
+      Economy-Klasse\n- direkter Flug"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709014073344
+    m_Localized: Name des Passagiers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750227304448
+    m_Localized: Abfahrt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 793944535040
+    m_Localized: Ankunft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 826475556864
+    m_Localized: Gate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862676594688
+    m_Localized: Sitz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 901851394048
+    m_Localized: Dauer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 944436162560
+    m_Localized: Preis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971090964480
+    m_Localized: Datum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000845357056
+    m_Localized: Von - Nach
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1221356695552
+    m_Localized: Verbindung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20478236831744
+    m_Localized: Von
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20903153381376
+    m_Localized: Nach
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

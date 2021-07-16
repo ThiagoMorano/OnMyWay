@@ -24,7 +24,7 @@ public class RotatingClock : MonoBehaviour
     {
         dragController = FindObjectOfType<DragPlane>();
 
-        int planeChoice = PlayerPrefs.GetInt("planeChoice", (int)AirplaneOptions.budgetConnection);
+        int planeChoice = PlayerPrefs.GetInt("planeChoice", (int)FindObjectOfType<AirplaneSetup>().defaultOption);
         if (planeChoice == (int)AirplaneOptions.budgetConnection)
         {
             _duration = durationConnection;
