@@ -1386,7 +1386,7 @@ MonoBehaviour:
   - {fileID: 1770958681}
   timelineController: {fileID: 1335066784}
   nextButton: {fileID: 558164128}
-  nextScene: Scene_01
+  nextScene: Scene_08_09
 --- !u!114 &695281111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,6 +4694,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  activateTaskResponse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2067700693
 MonoBehaviour:
   m_ObjectHideFlags: 0

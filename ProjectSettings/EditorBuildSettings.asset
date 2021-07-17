@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/URP_Exmaples/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
     path: Assets/_OnMyWay/Scenes/Scene_01.unity
     guid: 4bb59dfe714bd4b40ae2a96b4d2f839c
@@ -20,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_OnMyWay/Scenes/Scene_06_07.unity
     guid: 53d1c06d25ee64c469588e5a470d7880
+  - enabled: 1
+    path: Assets/_OnMyWay/Scenes/Scene_08_09.unity
+    guid: 49f52a2c44e39514da1eabd6d5f5ca36
+  - enabled: 1
+    path: Assets/_OnMyWay/Scenes/Scene_10_11.unity
+    guid: 3023277ede562184c91fee7b6a28fbef
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ec5837e79fef50a49873e61dba95b4d1, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 7b5ca8d9c02ea2e4fb81162ecc87a50b, type: 2}

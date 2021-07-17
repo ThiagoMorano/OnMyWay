@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+// @TODO: extract abstract class or interface from this and PlaneTicketDragDestination.
+// Destination was supposed to be a generic class to indicate the destinatio of any task
+// involving drag and dropping, but ended up having specific implementations from the
+// PackingTask. Decoupling them would leave a generic class that can also be used to 
+// refactor PlaneTicketSelectionTask.
 public class Destination : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
 {
     public List<Transform> slots;

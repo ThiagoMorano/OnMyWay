@@ -1,22 +1,7 @@
 fileFormatVersion: 2
-guid: 411c39efe0113bf468addc4e83ffd277
+guid: 7ba480d0aef9e8d40a9157fa15dd84f0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5906197669891940723
-    second: Sprites_Scene10_Items_0
-  - first:
-      213: -4933744167000640763
-    second: Sprites_Scene10_Items_1
-  - first:
-      213: -6446041036582683843
-    second: Sprites_Scene10_Items_2
-  - first:
-      213: 7974027276698657729
-    second: Sprites_Scene10_Items_3
-  - first:
-      213: -4010539263797539590
-    second: Sprites_Scene10_Items_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -152,112 +137,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Sprites_Scene10_Items_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 139
-        width: 644
-        height: 181
-      alignment: 9
-      pivot: {x: 0.96383923, y: 0.5036769}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8ed9d8f288f80ea0800000000000000
-      internalID: -5906197669891940723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Scene10_Items_1
-      rect:
-        serializedVersion: 2
-        x: 678
-        y: 4
-        width: 324
-        height: 332
-      alignment: 9
-      pivot: {x: 0.9573513, y: 0.07189008}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5037549f1d1d78bb0800000000000000
-      internalID: -4933744167000640763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Scene10_Items_2
-      rect:
-        serializedVersion: 2
-        x: 1037
-        y: 204
-        width: 116
-        height: 85
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3bf5ee64df0b86a0800000000000000
-      internalID: -6446041036582683843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Scene10_Items_3
-      rect:
-        serializedVersion: 2
-        x: 1187
-        y: 164
-        width: 116
-        height: 121
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c326e85f8f69ae60800000000000000
-      internalID: 7974027276698657729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Scene10_Items_5
-      rect:
-        serializedVersion: 2
-        x: 1347
-        y: 15
-        width: 194
-        height: 307
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afc479fc9c3b758c0800000000000000
-      internalID: -4010539263797539590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

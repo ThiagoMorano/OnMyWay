@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Info_3_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b21de063127dd504e948f25cd5562906, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2168854163456
+    m_Localized: 'When travelling by plane, pay attention to the following apects:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252190789632
+    m_Localized: book a budget airline!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2282284920832
+    m_Localized: Budget airlines try to keep their price down at any cost. They often
+      use newer and more fuel efficient air planes. They also try to fit more passengers
+      into one airplane.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2334520782848
+    m_Localized: book an economy class seat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2359455920128
+    m_Localized: Even though a seat in economy class is not very comfortable, choosing
+      this option over buisness and first class reduces your carbon footprint by
+      50%. Economy class is usually also the cheapest option! In economy class, more
+      passangers fit into the plane which is more fuel efficient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2403546443776
+    m_Localized: book a direct flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438103314432
+    m_Localized: Reaching your destination with a lot of detours is often a very
+      cheap option when booking a plane ticket. However, to keep emissions low, it
+      is better do chose a direct route. Choosing a direct connection is also the
+      fastest way to reach your destination!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Info_3_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: b21de063127dd504e948f25cd5562906, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2168854163456
+    m_Localized: 'Beim Reisen mit dem Flugzeug, beachte folgendes:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252190789632
+    m_Localized: Buche eine billig Fluglinie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2282284920832
+    m_Localized: "Billig Fluglinien versuchen mit allen Mittlen den Preis gering
+      zu halten. Das hei\xDFt, sie benutzen oftmals neuere und treibstoffeffizientere
+      Flugzeuge. Normalerweise passen dann auch mehr Passagiere an Bord."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2334520782848
+    m_Localized: Buche Economy Klasse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2359455920128
+    m_Localized: "Auch wenn ein Sitzplatz in der Economy Klasse nicht sehr komfortabel
+      ist, reduziert dies deine CO2-Bilanz um bis zu 50% gegen\xFCber eines Sitzplatzes
+      in der Business Klasse. Economy Klasse ist auch die g\xFCnstigste Option! In
+      der Economy Klasse passen auch die mei\xDFten Passagiere an Bord."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2403546443776
+    m_Localized: Buche einen direkten Flug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438103314432
+    m_Localized: "Manchmal kannst du ein Ticket zu deinem Zielort sehr g\xFCnstig
+      buchen, wenn du dabei viele Umwege machst. Aber um deine Emissionen gering
+      zu halten, ist es besser eine direkte Rute zu w\xE4hlen. Eine direkte Rute
+      ist auch der schnellste Weg zu deinem Ziel!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

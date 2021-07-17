@@ -47,6 +47,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+  - m_GUID: 9fa3c1e0d80d489469ed9ea45f18cf87
+    m_Address: Info_2_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+  - m_GUID: aa5c2264ed6b51345887ca636b563fd9
+    m_Address: Scene_8_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: cc85842c1f4906e4a83558347a530f61, type: 2}
   m_SchemaSet:

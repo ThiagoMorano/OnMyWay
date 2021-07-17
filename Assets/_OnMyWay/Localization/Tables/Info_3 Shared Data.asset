@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Info_3 Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Info_2
+  m_TableCollectionNameGuidString: b21de063127dd504e948f25cd5562906
+  m_Entries:
+  - m_Id: 2168854163456
+    m_Key: info_2_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252190789632
+    m_Key: info_2_tip1_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2282284920832
+    m_Key: info_2_tip1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2334520782848
+    m_Key: info_2_tip2_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2359455920128
+    m_Key: info_2_tip2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2403546443776
+    m_Key: info_2_tip3_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438103314432
+    m_Key: info_2_tip3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1626531617994
