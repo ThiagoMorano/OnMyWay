@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e1d78155783704d9d76c291a6e42e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: d7d13b8219020e1499a4c218bcf591ac, type: 2}
+  gameEvent: {fileID: 11400000, guid: fef74f5658e7c204f943831a4d9131fa, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
@@ -512,7 +512,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a53d28a5b6c347c42b6e4b612168c8f4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.059
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3978,7 +3978,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 42acf5550738f8e41a25bb7067762a4d, type: 2}
     - {fileID: 11400000, guid: 1ce44a0d9ca551045b6bd054faf4bdfd, type: 2}
     - {fileID: 11400000, guid: a19c266d6f2f0594aacb2c7aa110df69, type: 2}
-    - {fileID: 11400000, guid: b0955578b0f3b9a4395ad2e3dc909d13, type: 2}
+    - {fileID: 11400000, guid: 13f4e2c041d59bf4596bc7d8088435eb, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4052,7 +4052,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 667115192}
+        - m_Target: {fileID: 190393257}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -4066,9 +4066,9 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 667115192}
+        - m_Target: {fileID: 1728510978}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Stop
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
