@@ -1292,7 +1292,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f6a2ddb423d0ac4fb85ee0400a5da62, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.489
+  m_Volume: 0.69
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2696,7 +2696,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6328d02d9a79abe4592cb5b03cfaca46, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.489
+  m_Volume: 0.644
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3978,6 +3978,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 42acf5550738f8e41a25bb7067762a4d, type: 2}
     - {fileID: 11400000, guid: 1ce44a0d9ca551045b6bd054faf4bdfd, type: 2}
     - {fileID: 11400000, guid: a19c266d6f2f0594aacb2c7aa110df69, type: 2}
+    - {fileID: 11400000, guid: b0955578b0f3b9a4395ad2e3dc909d13, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4051,9 +4052,23 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 253353030}
+        - m_Target: {fileID: 667115192}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 667115192}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
