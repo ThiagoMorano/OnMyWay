@@ -11,6 +11,8 @@ using UnityEngine.EventSystems;
 // refactor this one.
 public class PlaneTicketDragDestination : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
 {
+    public Transform slot;
+
     [SerializeField] public DraggableItem storedItem;
 
     private bool _isHovering;

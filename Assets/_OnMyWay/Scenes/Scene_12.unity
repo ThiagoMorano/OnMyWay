@@ -1266,6 +1266,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 0}
     value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 45d0160b3ade6c343a1b52fbcc3f433d: {fileID: 0}

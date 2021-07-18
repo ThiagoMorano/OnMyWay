@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EndScreen_Plane_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8670a636d118da344a91b7f6ba94fb66, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6728200192
+    m_Localized: My Way
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542391152640
+    m_Localized: Transportation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573466750976
+    m_Localized: The plane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670753632256
+    m_Localized: The train
+    m_Metadata:
+      m_Items: []
+  - m_Id: 717738225664
+    m_Localized: The car
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750197944320
+    m_Localized: The bus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 794720481280
+    m_Localized: Costs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 828740481024
+    m_Localized: Duration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864442396672
+    m_Localized: Choices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5343661273088
+    m_Localized: Emissions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 932423675904
+    m_Localized: Direct Flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 970575065088
+    m_Localized: Connecting Flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1013717676032
+    m_Localized: Economy Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1052699537408
+    m_Localized: Business Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098656526336
+    m_Localized: Budget Airline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1149717983232
+    m_Localized: Standard Airline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4620894613504
+    m_Localized: Booking a direct flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4647377448960
+    m_Localized: Reaching your destination with a lot of detours is often a very
+      cheap option when booking a plane ticket. Though, to keep emissions low, it
+      is better do chose a direct route. Choosing a direct connection is also the
+      fastest way to reach your destination!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4697017036800
+    m_Localized: Booking a connecting flight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4720215732224
+    m_Localized: Reaching your destination with a lot of detours is often a very
+      cheap option when booking a plane ticket. Though, to keep emissions low, it
+      is better do chose a direct route. Choosing a direct connection is also the
+      fastest way to reach your destination!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4747449348096
+    m_Localized: Booking Economy Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4889518813184
+    m_Localized: Even though a seat in economy class is not very comfortable, choosing
+      this option over buisness and first calss reduces your carbon footprint by
+      50%. Economy class is usually also the cheapest option! In economy class, more
+      passangers fit into the plane which is more fuel efficient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4924654497792
+    m_Localized: Booking Business Class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4964731072512
+    m_Localized: Even though a seat in business class or first class is very comfortable,
+      choosing this option over economy class increases your carbon footprint by
+      50%. Economy class is usually also the cheapest option! In economy class, more
+      passangers fit into the plane which is more fuel efficient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5009027117056
+    m_Localized: Booking a Budget Airline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031563112448
+    m_Localized: Budget airlines try to keep their prize down at any cost. They often
+      use newer and more fuel efficent air planes. They also try to fit more passengers
+      into one airplane.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064224157696
+    m_Localized: Booking a Standard Airline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5214908723200
+    m_Localized: 'Standard Airlines are not too focused on keeping their prize low.
+      They often dont use the newest and most fuel efficent air planes. They also
+      don''t try to fit as many passangers as possible into one airplane. Therfore
+      it is better to choose a budget airline, which try to keep their prizes low
+      at any cost. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5376364261376
+    m_Localized: This Diagram shows the carbon footprint of a 200 Mile Trip per passanger,
+      i.e. pounds of CO2 emitted per passenger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30559871447040
+    m_Localized: The Plane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30601508302848
+    m_Localized: "The media often present traveling by plane as very unsustainable,
+      which is true. But sometimes traveling by plane is your only and best option.\nGenerally
+      speaking, only choose the plane for long haul or mid haul flights. That means
+      a flight distance of over 1500 km. Usually flights within Europe are seen as
+      short haul flight. Therefore it is recommended to choose different means of
+      transportation for your mobility inside Europe, for example train, bus or car. 
+      \nFor distances over 1500 km, make sure to pay attention to these simple factors
+      when booking a flight ticket:\n-book a budget airline\n-choose economy class\n-choose
+      a direct route"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

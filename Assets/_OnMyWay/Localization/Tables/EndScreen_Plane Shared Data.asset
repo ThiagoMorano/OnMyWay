@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: EndScreen_Plane Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EndScreen_Plane
+  m_TableCollectionNameGuidString: 8670a636d118da344a91b7f6ba94fb66
+  m_Entries:
+  - m_Id: 6728200192
+    m_Key: end_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542391152640
+    m_Key: end_transport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573466750976
+    m_Key: end_plane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670753632256
+    m_Key: end_train
+    m_Metadata:
+      m_Items: []
+  - m_Id: 717738225664
+    m_Key: end_car
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750197944320
+    m_Key: end_bus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 794720481280
+    m_Key: end_cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 828740481024
+    m_Key: end_duration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864442396672
+    m_Key: end_choices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 932423675904
+    m_Key: end_choice_1_a
+    m_Metadata:
+      m_Items: []
+  - m_Id: 970575065088
+    m_Key: end_choice_1_b
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1013717676032
+    m_Key: end_choice_2_a
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1052699537408
+    m_Key: end_choice_2_b
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098656526336
+    m_Key: end_choice_3_a
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1149717983232
+    m_Key: end_choice_3_b
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4620894613504
+    m_Key: end_choice_1_a_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4647377448960
+    m_Key: end_choice_1_a_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4697017036800
+    m_Key: end_choice_1_b_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4720215732224
+    m_Key: end_choice_1_b_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4747449348096
+    m_Key: end_choice_2_a_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4889518813184
+    m_Key: end_choice_2_a_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4924654497792
+    m_Key: end_choice_2_b_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4964731072512
+    m_Key: end_choice_2_b_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5009027117056
+    m_Key: end_choice_3_a_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031563112448
+    m_Key: end_choice_3_a_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064224157696
+    m_Key: end_choice_3_b_info_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5214908723200
+    m_Key: end_choice_3_b_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5343661273088
+    m_Key: end_emissions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5376364261376
+    m_Key: end_emissions_info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30559871447040
+    m_Key: info_3_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30601508302848
+    m_Key: info_3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1626623413860

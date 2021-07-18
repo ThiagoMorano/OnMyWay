@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EndScreen_Plane_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 8670a636d118da344a91b7f6ba94fb66, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6728200192
+    m_Localized: Mein Weg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542391152640
+    m_Localized: Verkehrsmittel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573466750976
+    m_Localized: Das Flugzeug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670753632256
+    m_Localized: Der Zug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 717738225664
+    m_Localized: Das Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750197944320
+    m_Localized: Der Bus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 794720481280
+    m_Localized: Kosten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 828740481024
+    m_Localized: Dauer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864442396672
+    m_Localized: Entscheidungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5343661273088
+    m_Localized: Emissionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 932423675904
+    m_Localized: Direkter Flug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 970575065088
+    m_Localized: Anschlussflug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1013717676032
+    m_Localized: Economy Klasse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1052699537408
+    m_Localized: Business Klasse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098656526336
+    m_Localized: Billig Fluglinie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1149717983232
+    m_Localized: Standard Fluglinie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4620894613504
+    m_Localized: Einen Direkten Flug Buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4647377448960
+    m_Localized: "\"Manchmal kannst du ein Ticket zu deinem Zielort sehr g\xFCnstig
+      buchen, wenn du dabei viele Umwege machst. Aber um deine Emissionen gering
+      zu halten, ist es besser eine direkte Rute zu w\xE4hlen. Eine direkte Rute
+      ist auch der schnellste Weg zu deinem Ziel!\n\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4697017036800
+    m_Localized: Einen Anschlussflug buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4720215732224
+    m_Localized: "Manchmal kannst du ein Ticket zu deinem Zielort sehr g\xFCnstig
+      buchen, wenn du dabei viele Umwege machst. Aber um deine Emissionen gering
+      zu halten, ist es besser eine direkte Rute zu w\xE4hlen. Eine direkte Rute
+      ist auch der schnellste Weg zu deinem Ziel!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4747449348096
+    m_Localized: Economy Klasse buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4889518813184
+    m_Localized: "Auch wenn ein Sitzplatz in der Economy Klasse nicht sehr komfortabel
+      ist, reduziert dies deine CO2-Bilanz um bis zu 50% gegen\xFCber eines Sitzplatzes
+      in der Business Klasse. Economy Klasse ist auch die g\xFCnstigste Option! In
+      der Economy Klasse passen auch die mei\xDFten Passagiere an Bord."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4924654497792
+    m_Localized: Business Klasse buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4964731072512
+    m_Localized: "Auch wenn ein Sitzplatz in der Business Klasse oder Ersten Klasse
+      sehr komfortabel ist steigert dies deine CO2-Bilanz um bis zu 50% gegen\xFCber
+      eines Sitzplatzes in der Economy Klasse. Economy Klasse ist auch die g\xFCnstigste
+      Option! In der Economy Klasse passen auch die mei\xDFten Passagiere an Bord."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5009027117056
+    m_Localized: Eine Billig Fluglinie buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031563112448
+    m_Localized: "Billig Fluglinien versuchen mit allen Mittlen den Preis gering
+      zu halten. Das hei\xDFt, sie benutzen oftmals neuere und treibstoffeffizientere
+      Flugzeuge. Normalerweise passen dann auch mehr Passagiere an Bord."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064224157696
+    m_Localized: Eine Standart Fluglinie buchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5214908723200
+    m_Localized: 'Standart Fluglinien sind nicht allzu fokussiert darauf ihre Kosten
+      gering zu halten. Deswegen benutzen sie oftmals nicht die neuesten und treibstoffeffizientesten
+      Flugzeuge. Normalerweise passen auch nicht so viele Passagiere an Bord. Dehalb
+      ist es besser einen billig Fluglinie zu buchen, da diese um jeden Preis versuchen
+      ihre Kosten gering zu halten. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5376364261376
+    m_Localized: "Dieses Diagram zeigt die CO2-Bilanz eines 200 Meilen Tripps pro
+      Passagier, d.h. Pfunde von CO2-\xC4quivaltenten verursacht pro Passagier. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30559871447040
+    m_Localized: Das Flugzeug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30601508302848
+    m_Localized: "Die Medien pr\xE4sentieren das Flugzeug als sehr umweltsch\xE4dlich.
+      Das stimmt zwar, aber manchmal ist das Flugzeug deine einzige und beste Option.
+      \nGenerell solltest du das Flugzeug nur f\xFCr Lang - und Mittelstrecken Fl\xFCge
+      nehmen. Also Fl\xFCge mit einer Distanz \xFCber 1500km. Innerhalb Europas,
+      ist dies mei\xDFtens jedoch nicht der fall. Deswegen ist es empfolen andere
+      Verkehrsmittel f\xFCr eine Reise innerhalb Eurpas zu nutzen, wie zum Beispiel
+      den Zug, den Bus oder das Auto. \nF\xFCr Fl\xFCge mit einer Distanz \xFCber
+      1500km, beachte diese Aspekte wenn du ein Ticket buchst:\n-Buche eine billig
+      Fluglinie\n-Buche Economy Klasse\n-W\xE4hle einen Direkt Flug"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

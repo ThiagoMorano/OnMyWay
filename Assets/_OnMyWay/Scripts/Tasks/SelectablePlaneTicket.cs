@@ -91,8 +91,8 @@ public class SelectablePlaneTicket : MonoBehaviour
     private void OnSelect()
     {
         selected = true;
-        transform.position = _dragDestination.transform.position;
-        transform.rotation = _dragDestination.transform.rotation;
+        transform.position = _dragDestination.slot.position;
+        transform.rotation = _dragDestination.slot.rotation;
 
         _collider2D.enabled = false;
 
