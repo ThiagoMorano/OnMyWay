@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
         {
             FindReferences();
         }
-        timelineController.SetSettingsOpen(true);
+        timelineController?.SetSettingsOpen(true);
         Time.timeScale = 0f;
     }
 
@@ -44,7 +44,7 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        timelineController.SetSettingsOpen(false);
+        timelineController?.SetSettingsOpen(false);
         Time.timeScale = 1f;
     }
 }
