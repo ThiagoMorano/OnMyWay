@@ -670,7 +670,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.489
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3823,6 +3823,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 1ce44a0d9ca551045b6bd054faf4bdfd, type: 2}
     - {fileID: 11400000, guid: a19c266d6f2f0594aacb2c7aa110df69, type: 2}
     - {fileID: 11400000, guid: 13f4e2c041d59bf4596bc7d8088435eb, type: 2}
+    - {fileID: 11400000, guid: 5156339a6ce423f44a109f802722ca26, type: 2}
+    - {fileID: 11400000, guid: f43c13bba31acec4bb80129b93808b32, type: 2}
+    - {fileID: 11400000, guid: 3088e236f25136f4791866d28c91a0e0, type: 2}
+    - {fileID: 11400000, guid: b0955578b0f3b9a4395ad2e3dc909d13, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3913,6 +3917,62 @@ MonoBehaviour:
         - m_Target: {fileID: 1728510978}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1980315157}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1980315157}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: a9f40d871269e9649aae507591fcbe52, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+          m_MethodName: Raise
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1326672726}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
