@@ -553,6 +553,7 @@ MonoBehaviour:
   _isPacked: 0
   _packedInSlot: -1
   cathegory: 1
+  type: 9
 --- !u!114 &5656857624165182984
 MonoBehaviour:
   m_ObjectHideFlags: 0

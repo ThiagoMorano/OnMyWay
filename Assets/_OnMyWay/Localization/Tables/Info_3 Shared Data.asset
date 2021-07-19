@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: Info_3 Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Info_2
+  m_TableCollectionName: GreenInfo
   m_TableCollectionNameGuidString: b21de063127dd504e948f25cd5562906
   m_Entries:
   - m_Id: 2168854163456
@@ -41,6 +41,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2438103314432
     m_Key: info_2_tip3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634633746657280
+    m_Key: info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634726637907968
+    m_Key: info_1_tip_header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634764411809792
+    m_Key: info_1_tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 637141089005568
+    m_Key: info_question
     m_Metadata:
       m_Items: []
   m_Metadata:

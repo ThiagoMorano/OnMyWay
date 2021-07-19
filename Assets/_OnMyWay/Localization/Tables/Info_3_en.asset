@@ -54,5 +54,36 @@ MonoBehaviour:
       fastest way to reach your destination!
     m_Metadata:
       m_Items: []
+  - m_Id: 634633746657280
+    m_Localized: 'Packing light saves fuel. If the weight of luggage is reduced it
+      will take less enegery to transport it.
+
+
+      Pack reusables to reduce your
+      waste. Carrying your own bottles and boxes can also be very convenient on the
+      way. Remember that shampoo bars are also lighter than shampoo bottles.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634726637907968
+    m_Localized: 'Must Haves:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634764411809792
+    m_Localized: 'water bottle
+
+      lunch box
+
+      reusable bags
+
+      shampoo
+      bars
+
+      ebook '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 637141089005568
+    m_Localized: Did you know?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

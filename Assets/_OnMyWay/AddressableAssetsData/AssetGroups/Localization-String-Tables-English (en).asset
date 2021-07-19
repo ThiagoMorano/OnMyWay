@@ -48,7 +48,7 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
   - m_GUID: 4a6eab14c9901c646b5f675448471262
-    m_Address: Info_2_en
+    m_Address: GreenInfo_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

@@ -3,6 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SuitcaseItemType
+{
+    none,
+    // BAD
+    books,
+    plasticBag,
+    plasticBottle,
+    shampooBottles,
+    // GOOD
+    ebook,
+    reusableBag,
+    reusableBottle,
+    reusableLunchBox,
+    reusableCup,
+    shampooBar,
+    // NORMAL
+    charger,
+    shirts,
+    deo,
+    laptop,
+    passport,
+    sunglasses,
+    towels,
+    trousers,
+}
+
+
 [RequireComponent(typeof(DraggableItem))]
 public class SuitcaseItem : MonoBehaviour
 {
@@ -21,6 +48,7 @@ public class SuitcaseItem : MonoBehaviour
     [SerializeField] int _packedInSlot = -1;
 
     public PackCathegory cathegory;
+    public SuitcaseItemType type;
 
     // Start is called before the first frame update
     void Start()

@@ -54,5 +54,25 @@ MonoBehaviour:
       ist auch der schnellste Weg zu deinem Ziel!"
     m_Metadata:
       m_Items: []
+  - m_Id: 634633746657280
+    m_Localized: "Leichtes packen sparrt Treibstoff. Wenn du das Gewicht deines Gepr\xE4chs
+      reduzierst, braucht man weniger Energie um es zu transportieren.\n\nPacke wiederverwendbare
+      Gegenst\xE4nde ein um deinen M\xFCll zu reduzieren. Das Mitnehmen von Auff\xFCllbaren
+      Wasserflaschen und Brotdosen, kann auch sehr n\xFCtzlich sein. Denke daran,
+      dass Shampoo Bl\xF6cke auch leiter als Shampoo Flaschen sind!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634726637907968
+    m_Localized: 'Must-Haves:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634764411809792
+    m_Localized: "Merhweg Flasche\nBrotdose\nJutebeutel\nShampoo Bl\xF6cke\nE-Reader"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 637141089005568
+    m_Localized: Wusstest du schon?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
