@@ -4588,6 +4588,7 @@ GameObject:
   - component: {fileID: 1567681557}
   - component: {fileID: 1567681556}
   - component: {fileID: 1567681559}
+  - component: {fileID: 1567681560}
   m_Layer: 0
   m_Name: Task_Click_Book
   m_TagString: Untagged
@@ -4760,6 +4761,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleModifier: 1.1
   associatedTransforms: []
+--- !u!114 &1567681560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567681553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d221e1179e47604685fa59026bf1283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToSwitch: 0.5
+  from: {x: 0, y: 0, z: -10}
+  to: {x: 0, y: 0, z: 10}
+  stateFrom: 0
 --- !u!114 &1578895616 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1818508669303527807, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
@@ -5037,6 +5054,7 @@ GameObject:
   - component: {fileID: 1604053105}
   - component: {fileID: 1604053107}
   - component: {fileID: 1604053108}
+  - component: {fileID: 1604053109}
   m_Layer: 0
   m_Name: Task_Click_Glasses
   m_TagString: Untagged
@@ -5209,6 +5227,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleModifier: 1.1
   associatedTransforms: []
+--- !u!114 &1604053109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604053102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d221e1179e47604685fa59026bf1283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToSwitch: 0.5
+  from: {x: 0, y: 0, z: -5}
+  to: {x: 0, y: 0, z: 5}
+  stateFrom: 0
 --- !u!1 &1653231867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1833636678413528443, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}

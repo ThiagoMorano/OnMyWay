@@ -22,4 +22,9 @@ public class InvertObjectNearRightEdge : MonoBehaviour
             objectToInvert.localScale = new Vector3(1, objectToInvert.localScale.y, objectToInvert.localScale.z);
         }
     }
+
+    void Update()
+    {
+        transform.eulerAngles = Vector3.zero;
+    }
 }
