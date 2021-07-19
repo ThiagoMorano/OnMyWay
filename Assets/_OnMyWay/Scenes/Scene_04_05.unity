@@ -481,6 +481,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &212331010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 740614692724915737, guid: 54df88389f0333345b604b085c84b701, type: 3}
+  m_PrefabInstance: {fileID: 740614693964342170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &316537942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 833410462976921956, guid: 1ca7966730071cc479b10d6d397240a1, type: 3}
@@ -772,6 +777,18 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 212331010}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
@@ -1982,6 +1999,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740614692724915730, guid: 54df88389f0333345b604b085c84b701, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740614692724915737, guid: 54df88389f0333345b604b085c84b701, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 740614693414570810, guid: 54df88389f0333345b604b085c84b701, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
