@@ -14,12 +14,15 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     public Action onBeginDragCallback;
     public Action onEndDragCallback;
 
+    public Action onDragCallback;
+
     Vector3 offset;
     Vector3 defaultPosition;
 
     Collider2D coll;
 
-    void Start() {
+    void Start()
+    {
         defaultPosition = transform.position;
 
         coll = GetComponent<Collider2D>();
@@ -30,7 +33,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     {
         offset = Camera.main.WorldToScreenPoint(transform.position) - Input.mousePosition;
 
-        if(onBeginDragCallback != null) onBeginDragCallback();
+        if (onBeginDragCallback != null) onBeginDragCallback();
         beginDragResponse?.Invoke();
     }
 
@@ -41,6 +44,8 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
         Vector2 position = Camera.main.ScreenToWorldPoint(Input.mousePosition + offset);
         transform.position = position;
+
+        if (onDragCallback != null) onDragCallback();
     }
 
 
@@ -48,16 +53,18 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     {
         coll.enabled = true;
 
-        if(onEndDragCallback != null) onEndDragCallback();
+        if (onEndDragCallback != null) onEndDragCallback();
         endDragResponse?.Invoke();
     }
 
 
-    public void ResetToDefaultPosition() {
+    public void ResetToDefaultPosition()
+    {
         transform.position = defaultPosition;
     }
 
-    public void SetDefaultPosition(Vector3 newDefaultPosition) {
+    public void SetDefaultPosition(Vector3 newDefaultPosition)
+    {
         defaultPosition = newDefaultPosition;
     }
 }

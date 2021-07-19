@@ -1253,13 +1253,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Packing light saves fuel. If the weight of luggage is reduced it will
-    take less enegery to transport it.
+  m_text: '"Packing light saves fuel. If the weight of luggage is reduced it will
+    take less energy to transport it.
 
 
-    Packing resuables to reduce your waste.
+    Pack reusables to reduce your waste.
     Carrying your own bottles and boxes can also be very convenient on the way. Remember
-    that shampoo bars are also lighter than shampoo bottles.'
+    that shampoo bars are also lighter than shampoo bottles."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fdc32e7d2b0157047a5cf223bbeb1068, type: 2}
   m_sharedMaterial: {fileID: -7536065108704890790, guid: fdc32e7d2b0157047a5cf223bbeb1068, type: 2}
