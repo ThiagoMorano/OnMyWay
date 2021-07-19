@@ -28,6 +28,11 @@ public class LocaleSelector : MonoBehaviour
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }
 
+    void OnDisable()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+    }
+
     private void OnLocaleChanged(Locale newLocale)
     {
         if (newLocale.Identifier.Code == locale.Identifier.Code)
