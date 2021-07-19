@@ -2746,9 +2746,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu_Life
       objectReference: {fileID: 0}
-    - target: {fileID: 6414362559146756592, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
+    - target: {fileID: 5253235366110969525, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414362558098363182, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414362558477324767, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414362558709040254, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414362559146756592, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2913d93b77be8d74b9411e27a44777d4, type: 3}

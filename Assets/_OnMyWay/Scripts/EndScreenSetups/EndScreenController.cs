@@ -52,6 +52,7 @@ public class EndScreenController : MonoBehaviour
 
 
         currentPage = 0;
+        CloseAllPages();
         OpenPage(endScreenPages[currentPage]);
     }
 
@@ -132,7 +133,7 @@ public class EndScreenController : MonoBehaviour
     {
         foreach (var page in endScreenPages)
         {
-
+            ClosePage(page);
         }
     }
 
