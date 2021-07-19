@@ -11,7 +11,7 @@ public class ScoreDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int choice = PlayerPrefs.GetInt("planeChoice", (int)AirplaneOptions.budgetDirect);
+        int choice = PlayerPrefs.GetInt("planeChoice", -1);
         // if (force)
         // {
         //     choice = (int)forcedValue;
@@ -27,6 +27,8 @@ public class ScoreDisplayer : MonoBehaviour
                 break;
             case (int)AirplaneOptions.budgetConnection: // connection, business, budget
                 score = 1;
+                break;
+            default:
                 break;
         }
 
