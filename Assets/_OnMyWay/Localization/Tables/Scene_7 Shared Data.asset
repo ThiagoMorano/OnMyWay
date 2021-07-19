@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Key: scene_7_end
     m_Metadata:
       m_Items: []
+  - m_Id: 2540920801603584
+    m_Key: scene_6_mom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2540973360427008
+    m_Key: scene_6_mom_tip
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

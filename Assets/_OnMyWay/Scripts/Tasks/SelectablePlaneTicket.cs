@@ -43,8 +43,6 @@ public class SelectablePlaneTicket : MonoBehaviour
         _dragDestination = FindObjectOfType<PlaneTicketDragDestination>(true);
         _ticketSelectionTask = FindObjectOfType<PlaneTicketSelectionTask>(true);
         _ticketSelectionTask.onCompleteCallback += DisableTicket;
-
-        Debug.Log("Complete ticket start");
     }
 
     private void OnStartHover()
@@ -63,7 +61,6 @@ public class SelectablePlaneTicket : MonoBehaviour
 
     private void ResetTicketToDefault()
     {
-        Debug.Log("resetting to default");
         transform.localPosition = _defaultPosition;
         transform.localEulerAngles = _defaultRotation;
         transform.localScale = _defaultScale;

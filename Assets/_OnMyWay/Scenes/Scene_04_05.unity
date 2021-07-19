@@ -1909,10 +1909,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1653231869}
     m_Modifications:
-    - target: {fileID: 86359272506547277, guid: c91924f3f4fd6224590df381045f0780, type: 3}
-      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 873705456}
     - target: {fileID: 86359273589662040, guid: c91924f3f4fd6224590df381045f0780, type: 3}
       propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.size
       value: 1
