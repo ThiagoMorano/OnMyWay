@@ -2578,6 +2578,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1653231869}
     m_Modifications:
+    - target: {fileID: 5891804346476963217, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963217, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -41741105
+      objectReference: {fileID: 0}
     - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
       propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

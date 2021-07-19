@@ -22,7 +22,6 @@ public class PlaneTicketSelectionTask : TaskBehaviour
     {
         // Store on player prefs
         PlayerPrefs.SetInt("planeChoice", (int)selectablePlaneTicket.airplaneOption);
-        Debug.Log("SELECTED TICKET " + selectablePlaneTicket.name);
         OnComplete();
     }
 }

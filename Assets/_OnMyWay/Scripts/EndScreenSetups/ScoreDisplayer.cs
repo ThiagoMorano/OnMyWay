@@ -5,17 +5,17 @@ using UnityEngine;
 public class ScoreDisplayer : MonoBehaviour
 {
     public GameObject[] leaves;
-    public bool force = false;
-    public AirplaneOptions forcedValue;
+    // public bool force = false;
+    // public AirplaneOptions forcedValue;
 
     // Start is called before the first frame update
     void Start()
     {
         int choice = PlayerPrefs.GetInt("planeChoice", (int)AirplaneOptions.budgetDirect);
-        if (force)
-        {
-            choice = (int)forcedValue;
-        }
+        // if (force)
+        // {
+        //     choice = (int)forcedValue;
+        // }
         int score = 0;
         switch (choice)
         {

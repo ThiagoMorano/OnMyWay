@@ -8,7 +8,7 @@ using UnityEngine.Localization.Tables;
 
 public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-
+    public DestinationChoice destination;
     public GameObject hoveredState;
     public LocalizedString noteLocalizationKey;
 
@@ -29,7 +29,8 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         _coll = GetComponent<Collider2D>();
         // coll.enabled = false;
-        if(hoveredState != null) {
+        if (hoveredState != null)
+        {
             hoveredState.SetActive(false);
         }
 
@@ -41,7 +42,8 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         mapSelectionAnimation.SetActive(false);
     }
 
-    private void Select() {
+    private void Select()
+    {
         _wasSelected = true;
         _destinationTask.SetSelected(this);
         PlaySelectionAnimation();
@@ -53,36 +55,44 @@ public class MapDestination : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         animator.enabled = true;
     }
 
-    public void OnSelectionAnimationFinished() {
+    public void OnSelectionAnimationFinished()
+    {
         onSelectCallback();
     }
 
 
-    public void SetTaskItemActive(bool value) {
+    public void SetTaskItemActive(bool value)
+    {
         _coll.enabled = value;
     }
 
-    public void SetTaskReference(SelectDestination destinationTask) {
+    public void SetTaskReference(SelectDestination destinationTask)
+    {
         this._destinationTask = destinationTask;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(hoveredState != null) {
+        if (hoveredState != null)
+        {
             hoveredState?.SetActive(true);
         }
-        if(_destinationTask != null) {
+        if (_destinationTask != null)
+        {
             _destinationTask.SetPinActive(false);
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if(!_wasSelected) {
-            if(hoveredState != null) {
-            hoveredState?.SetActive(false);
+        if (!_wasSelected)
+        {
+            if (hoveredState != null)
+            {
+                hoveredState?.SetActive(false);
             }
-            if(_destinationTask != null) {
+            if (_destinationTask != null)
+            {
                 _destinationTask.SetPinActive(true);
             }
         }

@@ -28,11 +28,14 @@ public class PackingTask : TaskBehaviour
         _destination = FindObjectOfType<Destination>();
         InstantiateSuitcaseItems(startingSlots);
 
+
+        // currentlyPackedItems = new SuitcaseItemType[];
         _destination.onAllItemsPlacedCallback += RefreshFeedbackTexts;
 
         confirmButton.onPointerUpCallback += () =>
         {
             OnComplete();
+            StorePackedItems();
             DisableButtons();
         };
         resetButton.onPointerUpCallback += ResetAll;
@@ -41,6 +44,17 @@ public class PackingTask : TaskBehaviour
     private void ResetAll()
     {
         _destination.ResetAll();
+    }
+
+
+    private void StorePackedItems()
+    {
+        SuitcaseItem[] packedItems = _destination.itemsStored;
+        for (int i = 0; i < packedItems.Length; i++)
+        {
+            Debug.Log(string.Format("packed{0} now holds {1} of type {2}", i, packedItems[i].name, packedItems[i].type));
+            PlayerPrefs.SetInt(string.Format("packed{0}", i), (int)packedItems[i].type);
+        }
     }
 
     private void DisableButtons()

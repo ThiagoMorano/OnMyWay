@@ -26,7 +26,6 @@ public class EndScreenController : MonoBehaviour
 
         choiceSensitiveObjects = FindObjectsOfType<ActiveWithAirplaneChoice>(true);
         AirplaneOptions choice = (AirplaneOptions)PlayerPrefs.GetInt("planeChoice", (int)AirplaneOptions.budgetDirect);
-        choice = AirplaneOptions.budgetConnection;
         foreach (var obj in choiceSensitiveObjects)
         {
             obj.Initialize(choice);

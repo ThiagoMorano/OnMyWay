@@ -50,11 +50,11 @@ public class AirportSetup : MonoBehaviour
 
     private void SetupObjects(AirportSetupValues setupValues)
     {
-        objectsToBeSet.airportScreen.StringReference.SetReference(
+        objectsToBeSet.airportScreen?.StringReference.SetReference(
             setupValues.screenString.TableReference,
             setupValues.screenString.TableEntryReference
         );
-        objectsToBeSet.airportScreen.RefreshString();
+        objectsToBeSet.airportScreen?.RefreshString();
 
         // ---
         objectsToBeSet.budgetDirectBigArrival.StringReference.SetReference(

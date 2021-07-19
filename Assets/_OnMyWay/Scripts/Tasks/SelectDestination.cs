@@ -70,10 +70,16 @@ public class SelectDestination : TaskBehaviour
     public void SetSelected(MapDestination hoveredStateDestination)
     {
         _selectedDestination = hoveredStateDestination;
+        StoreDestinationChoice(hoveredStateDestination.destination);
         DisableTask();
 
         // TODO: store the destination string here
         // hoveredStateDestination.hoveredState.SetActive(true);
         // this.SetPinActive(false);
+    }
+
+    private void StoreDestinationChoice(DestinationChoice destination)
+    {
+        PlayerPrefs.SetInt("destinationChoice", (int)destination);
     }
 }
