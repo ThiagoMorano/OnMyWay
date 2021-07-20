@@ -595,6 +595,21 @@ MonoBehaviour:
       m_Calls: []
   radius: 50
   percentageForCompletion: 0.6
+  onDragResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5b1b7f82e438ca746889aada77dc6886, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &774903260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1101,6 +1116,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b1b7f82e438ca746889aada77dc6886, type: 2}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1741923972}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayWithoutStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MirrorWipingSound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 253353029, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1818508669303527552, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1156,6 +1203,23 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1701775965711543433, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
   m_PrefabInstance: {fileID: 1741923969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1741923971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 253353027, guid: 83ac54f2b7fce2d419bb02183f948ae7, type: 3}
+  m_PrefabInstance: {fileID: 1741923969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741923972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741923971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e1d8e287e1d9a409c971472f19d32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113743032
 GameObject:
   m_ObjectHideFlags: 0

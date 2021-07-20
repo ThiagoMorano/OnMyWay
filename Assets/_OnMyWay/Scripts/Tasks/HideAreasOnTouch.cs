@@ -10,7 +10,7 @@ public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, 
     public int radius = 50;
 
     [Tooltip("The task is considered completed once this percentage of wiped steam has been achieved")]
-    public float percentageForCompletion =  0.6f;
+    public float percentageForCompletion = 0.6f;
     int numberOfTouchedPixels;
 
     SpriteRenderer spriteRenderer;
@@ -23,7 +23,8 @@ public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, 
     bool _isHovering;
 
     Boundary boundaries;
-    struct Boundary {
+    struct Boundary
+    {
         public Vector2 bottomLeft;
         public Vector2 bottomRight;
         public Vector2 topLeft;
@@ -35,6 +36,7 @@ public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, 
     // public UnityEvent completeResponse;
     // public Action onCompleteCallback;
 
+    public UnityEvent onDragResponse;
 
     // Start is called before the first frame update
     void Start()
@@ -83,29 +85,35 @@ public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, 
 
     public void OnDrag(PointerEventData eventData)
     {
+        onDragResponse?.Invoke();
         RemoveSteam(eventData.position);
         CheckCompletion();
     }
 
     private void RemoveSteam(Vector2 pointerPosition)
     {
-        if(IsOutOfBounds(pointerPosition)) {
+        if (IsOutOfBounds(pointerPosition))
+        {
             // print("Out of bounds");
             return;
         }
 
 
         Vector2Int pointerPositionInGrid = new Vector2Int(
-            Mathf.Clamp(Mathf.RoundToInt((pointerPosition.x - boundaries.bottomLeft.x) / (boundaries.bottomRight.x - boundaries.bottomLeft.x) * texture.width), 0, texture.width), 
+            Mathf.Clamp(Mathf.RoundToInt((pointerPosition.x - boundaries.bottomLeft.x) / (boundaries.bottomRight.x - boundaries.bottomLeft.x) * texture.width), 0, texture.width),
             Mathf.Clamp(Mathf.RoundToInt((pointerPosition.y - boundaries.bottomLeft.y) / (boundaries.topLeft.y - boundaries.bottomLeft.y) * texture.height), 0, texture.height)
         );
 
-        for (int i = -radius ; i < radius; i++) {
+        for (int i = -radius; i < radius; i++)
+        {
             if (pointerPositionInGrid.x + i < 0 || texture.width < pointerPositionInGrid.x + i) continue;
-            for (int j = -radius; j < radius; j++) {
-                if (pointerPositionInGrid.y + j < 0 || texture.height < pointerPositionInGrid.y + j) continue; 
-                if (i*i + j*j <= radius*radius) {
-                    if(texture.GetPixel(pointerPositionInGrid.x + i,  pointerPositionInGrid.y + j).a != 0) {
+            for (int j = -radius; j < radius; j++)
+            {
+                if (pointerPositionInGrid.y + j < 0 || texture.height < pointerPositionInGrid.y + j) continue;
+                if (i * i + j * j <= radius * radius)
+                {
+                    if (texture.GetPixel(pointerPositionInGrid.x + i, pointerPositionInGrid.y + j).a != 0)
+                    {
                         numberOfTouchedPixels++;
                         texture.SetPixel(pointerPositionInGrid.x + i, pointerPositionInGrid.y + j, transparent);
                     }
@@ -116,14 +124,17 @@ public class HideAreasOnTouch : TaskBehaviour, IDragHandler, IBeginDragHandler, 
         material.mainTexture = texture;
     }
 
-    bool IsOutOfBounds(Vector2 pointerOnScreen) {
+    bool IsOutOfBounds(Vector2 pointerOnScreen)
+    {
         return !_isHovering;
     }
 
     private void CheckCompletion()
     {
-        if(!_completed) {
-            if (((float)numberOfTouchedPixels) / (texture.width * texture.height) > percentageForCompletion) {
+        if (!_completed)
+        {
+            if (((float)numberOfTouchedPixels) / (texture.width * texture.height) > percentageForCompletion)
+            {
                 _completed = true;
                 OnComplete();
             }
