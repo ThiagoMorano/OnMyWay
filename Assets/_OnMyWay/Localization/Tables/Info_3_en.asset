@@ -38,7 +38,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2359455920128
     m_Localized: Even though a seat in economy class is not very comfortable, choosing
-      this option over buisness and first class reduces your carbon footprint by
+      this option over business and first class reduces your carbon footprint by
       50%. Economy class is usually also the cheapest option! In economy class, more
       passangers fit into the plane which is more fuel efficient.
     m_Metadata:
