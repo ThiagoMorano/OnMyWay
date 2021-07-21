@@ -2894,6 +2894,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 879857275508874025, guid: bb6b6eb7699eb004caf44c6d96964adc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 879857275881653127, guid: bb6b6eb7699eb004caf44c6d96964adc, type: 3}
       propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.size
       value: 4

@@ -23,7 +23,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
     void Start()
     {
-        defaultPosition = transform.position;
+        defaultPosition = transform.localPosition;
 
         coll = GetComponent<Collider2D>();
     }
@@ -60,7 +60,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
     public void ResetToDefaultPosition()
     {
-        transform.position = defaultPosition;
+        transform.localPosition = defaultPosition;
     }
 
     public void SetDefaultPosition(Vector3 newDefaultPosition)

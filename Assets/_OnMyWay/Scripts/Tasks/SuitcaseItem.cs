@@ -53,7 +53,7 @@ public class SuitcaseItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _initialPosition = transform.position;
+        _initialPosition = transform.localPosition;
 
         draggableItem = GetComponent<DraggableItem>();
         draggableItem.onEndDragCallback += OnStopDragging;

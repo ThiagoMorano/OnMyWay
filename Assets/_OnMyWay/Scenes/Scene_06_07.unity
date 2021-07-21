@@ -3092,9 +3092,37 @@ PrefabInstance:
       value: -41741105
       objectReference: {fileID: 0}
     - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
       propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1828315589}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: ed364547d22246942a30ef1f77898613, type: 2}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Raise
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891804346476963219, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
+      propertyPath: pointerUpResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5891804347024288912, guid: 32fea755dc8430b44a838ac2c39cd6bb, type: 3}
       propertyPath: m_RootOrder
       value: 2
